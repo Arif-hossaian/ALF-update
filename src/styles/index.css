@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .dark {
+    color-scheme: dark;
+  }
+}
+
+/* styling Swiper */
+.swiper-slide {
+  /* force all slider items occupy largest items height */
+  height: auto;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0 !important;
+}
+.swiper-pagination-item {
+  display: inline-block;
+  height: 8px;
+  width: 10px;
+  border-radius: 20px;
+  background-color: theme('colors.indigo.200');
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.swiper-pagination-item-active {
+  width: 20px;
+  background-color: theme('colors.indigo.700');
+}
+
+html.dark .swiper-button-next {
+  background-color: theme('colors.slate.600');
+}
+
+/* end of styling Swiper  */
+
+.prose .anchor {
+  @apply invisible absolute no-underline;
+  margin-left: -1em;
+  padding-right: 0.5em;
+  width: 80%;
+  max-width: 700px;
+  cursor: pointer;
+}
+
+.anchor:hover {
+  @apply visible !no-underline;
+}
+
+.prose a {
+  @apply transition-all;
+}
+
+.prose .anchor:after {
+  @apply text-gray-500;
+  content: '#';
+}
+
+.prose *:hover > .anchor {
+  @apply visible no-underline;
+}
