@@ -2,66 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  .dark {
-    color-scheme: dark;
-  }
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-/* styling Swiper */
 .swiper-slide {
-  /* force all slider items occupy largest items height */
-  height: auto;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: 0 !important;
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
 }
-.swiper-pagination-item {
-  display: inline-block;
-  height: 8px;
+body::-webkit-scrollbar {
   width: 10px;
-  border-radius: 20px;
-  background-color: theme('colors.indigo.200');
-  margin-right: 4px;
-  margin-left: 4px;
-}
-.swiper-pagination-item-active {
-  width: 20px;
-  background-color: theme('colors.indigo.700');
+  background-color: white;
 }
 
-html.dark .swiper-button-next {
-  background-color: theme('colors.slate.600');
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(18, 18, 88);
 }
 
-/* end of styling Swiper  */
-
-.prose .anchor {
-  @apply invisible absolute no-underline;
-  margin-left: -1em;
-  padding-right: 0.5em;
-  width: 80%;
-  max-width: 700px;
-  cursor: pointer;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.anchor:hover {
-  @apply visible !no-underline;
-}
-
-.prose a {
-  @apply transition-all;
-}
-
-.prose .anchor:after {
-  @apply text-gray-500;
-  content: '#';
-}
-
-.prose *:hover > .anchor {
-  @apply visible no-underline;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
 }

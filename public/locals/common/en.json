@@ -1,0 +1,11 @@
+{
+  "appTitle": {
+    "value": "ALF Organization"
+  },
+  "appMenu": {
+    "music": "Music",
+    "event": "Event",
+    "About": "About",
+    "Contact_Us": "Contact us"
+  }
+}

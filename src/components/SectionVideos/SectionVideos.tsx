@@ -1,4 +1,5 @@
 import React, { FC, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import NcPlayIcon from '../../icons/NcPlayIcon';
 import NcPlayIcon2 from '../../icons/NcPlayIcon2';
@@ -56,6 +57,7 @@ const SectionVideos: FC<SectionVideosProps> = ({
 }) => {
   const [isPlay, setIsPlay] = useState(false);
   const [currentVideo, setCurrentVideo] = useState(0);
+  const { t } = useTranslation(['video']);
 
   const renderMainVideo = () => {
     const video: VideoType = videos[currentVideo];
@@ -122,15 +124,18 @@ const SectionVideos: FC<SectionVideosProps> = ({
   return (
     <div className={`nc-SectionVideos mt-11 ${className}`}>
       <div className="flex justify-between items-center">
-        <Heading
-          desc="Check out our hottest videos. View more and share more new
-          perspectives on just about any topic. Everyone’s welcome."
-        >
-          🎬 The Videos
+        <Heading desc={t('appVideoTitle.subTitle1')}>
+          🎬 {t('appVideoTitle.title')}
         </Heading>
         <div>
           <Link to="/videos">
-            <Button>More Videos</Button>
+            <Button
+              className="ml-5 mt-7 border-solid border-2 border-green-400"
+              variant="ghost"
+              size="md"
+            >
+              {t('appVideoTitle.videoButton1')}
+            </Button>
           </Link>
         </div>
       </div>
