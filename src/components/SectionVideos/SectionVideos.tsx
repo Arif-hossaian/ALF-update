@@ -1,4 +1,5 @@
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import NcPlayIcon from '../../icons/NcPlayIcon';
 import NcPlayIcon2 from '../../icons/NcPlayIcon2';
@@ -56,12 +57,13 @@ const SectionVideos: FC<SectionVideosProps> = ({
 }) => {
   const [isPlay, setIsPlay] = useState(false);
   const [currentVideo, setCurrentVideo] = useState(0);
+  const { t } = useTranslation(['video']);
 
   const renderMainVideo = () => {
     const video: VideoType = videos[currentVideo];
     return (
       <div
-        className="group aspect-w-16 aspect-h-16 sm:aspect-h-9 bg-neutral-800 rounded-3xl overflow-hidden border-4 border-white dark:border-neutral-900 sm:rounded-[50px] sm:border-[10px]"
+        className="group aspect-w-16 aspect-h-16 sm:aspect-h-9 bg-natural-800 rounded-3xl overflow-hidden border-4 border-white sm:rounded-[50px] sm:border-[10px]"
         title={video.title}
       >
         {isPlay ? (
@@ -122,21 +124,24 @@ const SectionVideos: FC<SectionVideosProps> = ({
   return (
     <div className={`nc-SectionVideos mt-11 ${className}`}>
       <div className="flex justify-between items-center">
-        <Heading
-          desc="Check out our hottest videos. View more and share more new
-          perspectives on just about any topic. Everyone’s welcome."
-        >
-          🎬 The Videos
+        <Heading desc={t('appVideoTitle.subTitle1')}>
+          🎬 {t('appVideoTitle.title')}
         </Heading>
         <div>
           <Link to="/videos">
-            <Button>More Videos</Button>
+            <Button
+              className="ml-5 mt-7 border-solid border-2 border-green-400"
+              variant="ghost"
+              size="md"
+            >
+              {t('appVideoTitle.videoButton1')}
+            </Button>
           </Link>
         </div>
       </div>
 
       <div className="flex flex-col relative sm:pr-4 sm:py-4 md:pr-6 md:py-6 xl:pr-14 xl:py-14 lg:flex-row">
-        <div className="absolute -top-4 -bottom-4 -right-4 w-2/3 rounded-3xl bg-primary-100 bg-opacity-40 z-0 sm:rounded-[50px] md:top-0 md:bottom-0 md:right-0 xl:w-1/2 bg-neutral-300 dark:bg-neutral-800 dark:bg-opacity-40"></div>
+        <div className="absolute -top-4 -bottom-4 -right-4 w-2/3 rounded-3xl bg-primary-100 bg-opacity-40 z-0 sm:rounded-[50px] md:top-0 md:bottom-0 md:right-0 xl:w-1/2 bg-green-200 dark:bg-neutral-800 dark:bg-opacity-40"></div>
         <div className="flex-grow relative pb-2 sm:pb-4 lg:pb-0 lg:pr-5 xl:pr-6">
           {renderMainVideo()}
         </div>

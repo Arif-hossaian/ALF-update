@@ -3,30 +3,17 @@ import React, { Fragment, useState, useEffect, memo } from 'react';
 import clsx from 'clsx';
 import { Link, useLocation } from 'react-router-dom';
 import { Dialog, Transition } from '@headlessui/react';
-import SwitchToDarkMode from '../../components/SwitchToDarkMode/SwitchToDarkMode';
-
-const navItems = [
-  {
-    title: 'Home',
-    path: '/',
-  },
-  {
-    title: 'Help',
-    path: '/help',
-  },
-  {
-    title: 'About',
-    path: '/about',
-  },
-  {
-    title: 'Contact',
-    path: '/contact',
-  },
-];
+import { Helmet } from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 
 const Navbar: React.FC = () => {
   const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation(['header']);
+
+  const handleLanguageChange = (event: any) => {
+    i18n.changeLanguage(event.target.value);
+  };
 
   useEffect(() => {
     let offset = 50;
@@ -48,54 +35,89 @@ const Navbar: React.FC = () => {
     <div
       id="navbar"
       className={clsx(
-        'fixed inset-x-0 top-0 z-40 h-16 transition-colors duration-300',
+        'fixed inset-x-0 top-0 z-40 h-26 transition-colors duration-300',
         isSticky || location.pathname !== '/'
-          ? 'border-b border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-800'
-          : 'bg-transparent'
+          ? 'border-b border-slate-200 bg-[#14A800]'
+          : 'bg-[#14A800]'
       )}
     >
+      <Helmet>
+        <title>{t('appHeader.header')}</title>
+      </Helmet>
       <div className="mx-auto max-w-screen-xl py-4 px-4 md:px-8">
         <div className="relative flex items-center">
           <Link to="/">
             <div className="flex-none">
-              <span className="sr-only">Music section</span>
-              <span className="flex items-center space-x-2 text-3xl">
+              <span className="sr-only">{t('appTitle.value')}</span>
+              <span className="flex items-center space-x-2">
                 {/* <CompactLogo className="h-[28px] w-[28px]" />
                 <TextLogo className="h-[22px] w-auto fill-gray-900 dark:fill-gray-50" /> */}
-                <span className="text-red-400">{`Music `}</span>
-                <span>{` Point`}</span>
+                <span className="text-white md:text-3xl sm:text-sm">
+                  {t('appTitle.value')}
+                </span>
               </span>
             </div>
           </Link>
 
           <div className="relative ml-auto items-center md:flex">
-            <nav className="hidden font-semibold leading-6 text-gray-900 dark:text-gray-200 md:block">
-              <ul className="flex space-x-10">
-                {navItems.map((item) => (
-                  <li className="relative" key={item.title}>
-                    <Link to={item.path}>
-                      <div
-                        className={clsx(
-                          'peer transition-all duration-150 hover:text-red-400',
-                          location.pathname === item.path ? 'text-red-400' : ''
-                        )}
-                      >
-                        {item.title}
-                      </div>
-                    </Link>
-                    <span
+            <nav className="hidden font-semibold leading-6 text-white dark:text-gray-200 md:block">
+              <ul className="flex space-x-10 text-lg">
+                <li className="relative">
+                  <Link to="/allMusics">
+                    <div
                       className={clsx(
-                        'absolute inset-x-0 -bottom-0.5 h-0.5 scale-x-0 rounded-full bg-red-400 transition-all duration-150 peer-hover:scale-x-100',
-                        location.pathname === item.path ? 'scale-x-100' : ''
+                        'peer transition-all duration-150 hover:text-green-200'
                       )}
-                    />
-                  </li>
-                ))}
+                    >
+                      {t('appMenu.music')}
+                    </div>
+                  </Link>
+                </li>
+                <li className="relative">
+                  <Link to="/events">
+                    <div
+                      className={clsx(
+                        'peer transition-all duration-150 hover:text-green-200'
+                      )}
+                    >
+                      {t('appMenu.event')}
+                    </div>
+                  </Link>
+                </li>
+                <li className="relative">
+                  <Link to="/about">
+                    <div
+                      className={clsx(
+                        'peer transition-all duration-150 hover:text-green-200'
+                      )}
+                    >
+                      {t('appMenu.about')}
+                    </div>
+                  </Link>
+                </li>
+                <li className="relative">
+                  <Link to="/contact_us">
+                    <div
+                      className={clsx(
+                        'peer transition-all duration-150 hover:text-green-200'
+                      )}
+                    >
+                      {t('appMenu.contact_us')}
+                    </div>
+                  </Link>
+                </li>
               </ul>
             </nav>
 
             <div className="flex items-center space-x-4 pl-6 md:space-x-6">
-              <SwitchToDarkMode />
+              <select
+                className="mt-1 block w-14 py-1 px-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                name="language"
+                onChange={handleLanguageChange}
+              >
+                <option value="en">EN</option>
+                <option value="bd">BD</option>
+              </select>
               <MenuPopOver display="flex md:hidden" />
             </div>
           </div>
@@ -109,7 +131,7 @@ export default memo(Navbar);
 
 const MenuPopOver = ({ display }: { display: string }) => {
   let [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
+  const { t } = useTranslation(['header']);
 
   return (
     <div className={display}>
@@ -160,26 +182,55 @@ const MenuPopOver = ({ display }: { display: string }) => {
               <span className="flex items-center space-x-2">
                 {/* <CompactLogo className="h-[32px] w-[32px]" />
                 <TextLogo className="h-[22px] w-auto fill-gray-900 dark:fill-gray-50" /> */}
-                Music
+                <span className="text-white">{t('appTitle.value')}</span>
               </span>
             </a>
 
             <ul className="mt-16 space-y-6">
-              {navItems.map((item) => (
-                <li className="relative" key={item.title}>
-                  <Link to={item.path}>
-                    <div
-                      onClick={() => setIsOpen(false)}
-                      className={clsx(
-                        'peer block text-lg font-semibold transition-all duration-150 hover:text-red-400',
-                        location.pathname === item.path ? 'text-red-400' : ''
-                      )}
-                    >
-                      {item.title}
-                    </div>
-                  </Link>
-                </li>
-              ))}
+              <li className="relative">
+                <Link to="/allMusics">
+                  <div
+                    className={clsx(
+                      'peer block text-lg font-semibold transition-all duration-150 hover:text-green-200'
+                    )}
+                  >
+                    {t('appMenu.music')}
+                  </div>
+                </Link>
+              </li>
+              <li className="relative">
+                <Link to="/events">
+                  <div
+                    className={clsx(
+                      'peer block text-lg font-semibold transition-all duration-150 hover:text-green-200'
+                    )}
+                  >
+                    {t('appMenu.event')}
+                  </div>
+                </Link>
+              </li>
+              <li className="relative">
+                <Link to="/about">
+                  <div
+                    className={clsx(
+                      'peer block text-lg font-semibold transition-all duration-150 hover:text-green-200'
+                    )}
+                  >
+                    {t('appMenu.about')}
+                  </div>
+                </Link>
+              </li>
+              <li className="relative">
+                <Link to="/contact_us">
+                  <div
+                    className={clsx(
+                      'peer block text-lg font-semibold transition-all duration-150 hover:text-green-200'
+                    )}
+                  >
+                    {t('appMenu.contact_us')}
+                  </div>
+                </Link>
+              </li>
             </ul>
 
             <button

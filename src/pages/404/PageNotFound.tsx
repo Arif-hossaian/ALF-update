@@ -14,7 +14,13 @@ export default function PageNotFound() {
         {`Sorry, we couldn't find the page you're looking for.`}
       </p>
       <Link to="/">
-        <Button>Back to home</Button>
+        <Button
+          className="ml-5 mt-7 border-solid border-2 border-green-300"
+          variant="ghost"
+          size="md"
+        >
+          Back to home
+        </Button>
       </Link>
     </div>
   );

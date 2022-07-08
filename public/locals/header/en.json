@@ -1,0 +1,14 @@
+{
+  "appHeader": {
+    "header": "Abdul Alim Organization"
+  },
+  "appTitle": {
+    "value": "ALF Organization"
+  },
+  "appMenu": {
+    "music": "Music",
+    "event": "Event",
+    "about": "About",
+    "contact_us": "Contact us"
+  }
+}
