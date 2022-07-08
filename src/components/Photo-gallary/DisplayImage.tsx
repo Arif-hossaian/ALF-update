@@ -6,7 +6,7 @@ const DisplayImage = () => {
   const { t } = useTranslation(['gallery']);
   return (
     <div className="mt-20">
-      <h2 className="text-center md:text-5xl xs:text-lg">
+      <h2 className="text-center text-green-400 md:text-5xl xs:text-lg">
         {t('appGalleryTitle.title')}
       </h2>
       <ImageSwiper />

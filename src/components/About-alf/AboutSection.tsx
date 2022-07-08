@@ -12,7 +12,7 @@ const AboutSection: React.FC = () => {
       </h1>
       <div className="flex flex-col lg:flex-row lg:items-center mt-10">
         <div>
-          <span className="mb-4 space-y-4 ml-6 inline-block font-semibold text-gray-900 dark:text-gray-50 md:text-6xl xs:text-lg">
+          <span className="mb-4 space-y-4 ml-6 inline-block font-semibold text-gray-900 md:text-5xl xs:text-lg">
             <div>{t('appAboutTitle.subTitle1')}</div>
           </span>
           <p className="font-thin text-md ml-6">
@@ -47,7 +47,7 @@ const AboutSection: React.FC = () => {
         <img
           src="https://i.ibb.co/c19gc9K/A-7.jpg"
           alt="LatestMusics"
-          className="block w-full h-full object-fit overflow-hidden border-double border-4 border-gray-300"
+          className="block w-full h-full object-cover animate-pulse rounded-md overflow-hidden border-double border-4 border-gray-300 transform transition-all hover:scale-105"
         />
       </div>
     </div>

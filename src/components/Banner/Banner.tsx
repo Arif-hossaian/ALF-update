@@ -1,11 +1,16 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useScroll } from '../../hooks/useScroll';
 
 const Banner: React.FC = () => {
   const { t } = useTranslation(['banner']);
+  const [element] = useScroll();
   return (
-    <div className="bg-gray-100 py-16 dark:bg-gray-800">
-      <div className="mx-auto mt-10 max-w-screen-xl">
+    <div
+      className="bg-gradient-to-r from-cyan-100 to-gray-200 py-16"
+      ref={element as unknown as React.RefObject<HTMLDivElement>}
+    >
+      <div className="mx-auto mt-5 md:max-w-screen-2xl lg:max-w-screen-2xl">
         <section
           id="hero"
           className="flex flex-col items-center justify-between px-6 sm:px-8 md:flex-row"
@@ -21,7 +26,7 @@ const Banner: React.FC = () => {
           <img
             src="https://i.ibb.co/YdTq7wg/banner-alf.png"
             alt="Banner"
-            className="block h-1/2 w-full object-cover overflow-hidden sm:object-fill"
+            className="block h-1/2 w-full object-cover overflow-hidden sm:object-cover"
           />
         </section>
       </div>

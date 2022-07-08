@@ -76,9 +76,9 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     ];
     let btnGhost = [
       'bg-green-50',
-      'text-green-600',
-      'hover:bg-gray-100',
-      'hover:text-green-400',
+      'text-gray-700',
+      'hover:bg-[#14A800]',
+      'hover:text-white',
     ];
 
     if (variant === 'solid') {

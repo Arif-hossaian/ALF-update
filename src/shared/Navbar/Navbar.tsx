@@ -5,7 +5,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { Dialog, Transition } from '@headlessui/react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
-import { title } from 'process';
 
 const Navbar: React.FC = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -38,8 +37,8 @@ const Navbar: React.FC = () => {
       className={clsx(
         'fixed inset-x-0 top-0 z-40 h-26 transition-colors duration-300',
         isSticky || location.pathname !== '/'
-          ? 'border-b border-slate-200 bg-green-500'
-          : 'bg-green-500'
+          ? 'border-b border-slate-200 bg-[#14A800]'
+          : 'bg-[#14A800]'
       )}
     >
       <Helmet>
@@ -49,7 +48,7 @@ const Navbar: React.FC = () => {
         <div className="relative flex items-center">
           <Link to="/">
             <div className="flex-none">
-              <span className="sr-only">Music section</span>
+              <span className="sr-only">{t('appTitle.value')}</span>
               <span className="flex items-center space-x-2">
                 {/* <CompactLogo className="h-[28px] w-[28px]" />
                 <TextLogo className="h-[22px] w-auto fill-gray-900 dark:fill-gray-50" /> */}
@@ -67,7 +66,7 @@ const Navbar: React.FC = () => {
                   <Link to="/allMusics">
                     <div
                       className={clsx(
-                        'peer transition-all duration-150 hover:text-red-400'
+                        'peer transition-all duration-150 hover:text-green-200'
                       )}
                     >
                       {t('appMenu.music')}
@@ -78,7 +77,7 @@ const Navbar: React.FC = () => {
                   <Link to="/events">
                     <div
                       className={clsx(
-                        'peer transition-all duration-150 hover:text-red-400'
+                        'peer transition-all duration-150 hover:text-green-200'
                       )}
                     >
                       {t('appMenu.event')}
@@ -89,7 +88,7 @@ const Navbar: React.FC = () => {
                   <Link to="/about">
                     <div
                       className={clsx(
-                        'peer transition-all duration-150 hover:text-red-400'
+                        'peer transition-all duration-150 hover:text-green-200'
                       )}
                     >
                       {t('appMenu.about')}
@@ -100,7 +99,7 @@ const Navbar: React.FC = () => {
                   <Link to="/contact_us">
                     <div
                       className={clsx(
-                        'peer transition-all duration-150 hover:text-red-400'
+                        'peer transition-all duration-150 hover:text-green-200'
                       )}
                     >
                       {t('appMenu.contact_us')}
@@ -192,7 +191,7 @@ const MenuPopOver = ({ display }: { display: string }) => {
                 <Link to="/allMusics">
                   <div
                     className={clsx(
-                      'peer block text-lg font-semibold transition-all duration-150 hover:text-red-400'
+                      'peer block text-lg font-semibold transition-all duration-150 hover:text-green-200'
                     )}
                   >
                     {t('appMenu.music')}
@@ -203,7 +202,7 @@ const MenuPopOver = ({ display }: { display: string }) => {
                 <Link to="/events">
                   <div
                     className={clsx(
-                      'peer block text-lg font-semibold transition-all duration-150 hover:text-red-400'
+                      'peer block text-lg font-semibold transition-all duration-150 hover:text-green-200'
                     )}
                   >
                     {t('appMenu.event')}
@@ -214,7 +213,7 @@ const MenuPopOver = ({ display }: { display: string }) => {
                 <Link to="/about">
                   <div
                     className={clsx(
-                      'peer block text-lg font-semibold transition-all duration-150 hover:text-red-400'
+                      'peer block text-lg font-semibold transition-all duration-150 hover:text-green-200'
                     )}
                   >
                     {t('appMenu.about')}
@@ -225,7 +224,7 @@ const MenuPopOver = ({ display }: { display: string }) => {
                 <Link to="/contact_us">
                   <div
                     className={clsx(
-                      'peer block text-lg font-semibold transition-all duration-150 hover:text-red-400'
+                      'peer block text-lg font-semibold transition-all duration-150 hover:text-green-200'
                     )}
                   >
                     {t('appMenu.contact_us')}

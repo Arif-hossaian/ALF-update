@@ -11,7 +11,7 @@ const LatestMusics: React.FC = () => {
         <img
           src="https://i.ibb.co/mR0Wb63/A-17.jpg"
           alt="LatestMusics"
-          className="block w-full h-full object-fit overflow-hidden"
+          className="block w-full h-full object-fit overflow-hidden animate-pulse transform transition-all hover:scale-105"
         />
         <h1>
           <span className="mb-4 space-y-4 ml-6 inline-block font-bold text-gray-900 dark:text-gray-50 md:text-7xl">
