@@ -10,14 +10,14 @@ const ImageSwiper: React.FC = () => {
     <div className="mt-11">
       <div className="flex justify-between items-center space-x-8">
         <NcImage
-          src="https://i.ibb.co/zFgVPBM/Pic-Abdul-Alaim-a.jpg"
-          alt="LatestMusics"
+          src="https://res.cloudinary.com/arifscloud/image/upload/v1657362448/alf-images/Pic-Abdul-Alaim_a_fxju2u.jpg"
+          alt="Gallery"
           className="block w-full h-full object-cover rounded-md overflow-hidden border-double border-4 border-gray-300 transform transition-all hover:scale-105"
         />
 
         <NcImage
-          src="https://i.ibb.co/tsMZ0YW/A-8.jpg"
-          alt="LatestMusics"
+          src="https://res.cloudinary.com/arifscloud/image/upload/v1657362442/alf-images/A-8_vjljkw.jpg"
+          alt="Gallery"
           className="block w-full h-full object-cover rounded-md overflow-hidden border-double border-4 border-gray-300 transform transition-all hover:scale-105"
         />
       </div>

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Fragment, useState, useEffect, memo } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import clsx from 'clsx';
 import { Link, useLocation } from 'react-router-dom';
 import { Dialog, Transition } from '@headlessui/react';
@@ -127,9 +127,9 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default memo(Navbar);
+export default Navbar;
 
-const MenuPopOver = ({ display }: { display: string }) => {
+const MenuPopOver = React.memo(({ display }: { display: string }) => {
   let [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation(['header']);
 
@@ -252,4 +252,4 @@ const MenuPopOver = ({ display }: { display: string }) => {
       </Transition>
     </div>
   );
-};
+});

@@ -1,16 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+import NcImage from '../NcImage/NcImage';
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation(['footer']);
   return (
     <div className="mt-12">
       <hr />
-      <footer className="text-white bg-gradient-to-r from-pink-500 via-green-500 to-yellow-500 lg:grid lg:grid-cols-5">
+      <footer className="text-white bg-gradient-to-r from-pink-500 via-green-500 to-yellow-600 lg:grid lg:grid-cols-5">
         <aside className="hidden lg:relative lg:col-span-2 lg:block">
-          <img
+          <NcImage
             className="absolute inset-0 object-cover w-full h-full"
-            src="https://images.unsplash.com/photo-1624456735729-03594a40c5fb"
-            alt="Comic Graphic"
+            src="https://i.ibb.co/CmWMXR9/abdul-alim-logo.jpg"
+            alt="Footer_cover"
           />
         </aside>
 
@@ -18,7 +21,9 @@ const Footer: React.FC = () => {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             <div>
               <p className="font-medium">
-                <span className="text-xs tracking-widest uppercase">Call</span>
+                <span className="text-xs tracking-widest uppercase">
+                  {t('appFooterTitle.callTitle')}
+                </span>
 
                 <a
                   className="block text-2xl sm:text-3xl hover:opacity-75"
@@ -29,8 +34,8 @@ const Footer: React.FC = () => {
               </p>
 
               <ul className="mt-8 space-y-2 text-sm">
-                <li>Monday to Friday: 10am - 5pm</li>
-                <li>Weekend: 10am - 3pm</li>
+                <li>{t('appFooterTitle.officeHourTitle')}</li>
+                <li>{t('appFooterTitle.weekendTitle')}</li>
               </ul>
 
               <div className="flex mt-16 space-x-3">
@@ -144,47 +149,42 @@ const Footer: React.FC = () => {
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
-                <p className="font-medium">Support</p>
+                <p className="font-medium">
+                  {' '}
+                  {t('appFooterTitle.supportTitle1')}
+                </p>
 
                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-200">
                   <a className="hover:opacity-75" href="">
-                    {' '}
-                    Contact{' '}
+                    {t('appFooterTitle.supportSubTitle1')}
                   </a>
                   <a className="hover:opacity-75" href="">
-                    {' '}
-                    FAQs{' '}
+                    {t('appFooterTitle.supportSubTitle2')}
                   </a>
                   <a className="hover:opacity-75" href="">
-                    {' '}
-                    Live Chat{' '}
+                    {t('appFooterTitle.supportSubTitle3')}
                   </a>
                   <a className="hover:opacity-75" href="">
-                    {' '}
-                    Forums{' '}
+                    {t('appFooterTitle.supportSubTitle4')}
                   </a>
                 </nav>
               </div>
 
               <div>
-                <p className="font-medium">Products</p>
+                <p className="font-medium">{t('appFooterTitle.othersTitle')}</p>
 
                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-200">
                   <a className="hover:opacity-75" href="">
-                    {' '}
-                    1to1 Coaching{' '}
+                    {t('appFooterTitle.othersSubTitle1')}
                   </a>
                   <a className="hover:opacity-75" href="">
-                    {' '}
-                    Lesson Plans{' '}
+                    {t('appFooterTitle.othersSubTitle2')}
                   </a>
                   <a className="hover:opacity-75" href="">
-                    {' '}
-                    Meal Plans{' '}
+                    {t('appFooterTitle.othersSubTitle3')}
                   </a>
                   <a className="hover:opacity-75" href="">
-                    {' '}
-                    Gym Sessions{' '}
+                    {t('appFooterTitle.othersSubTitle4')}
                   </a>
                 </nav>
               </div>
@@ -195,30 +195,23 @@ const Footer: React.FC = () => {
             <div className="text-sm text-gray-200 sm:items-center sm:justify-between sm:flex">
               <div className="flex space-x-3">
                 <a className="hover:opacity-75" href="">
-                  {' '}
-                  Privacy Policy{' '}
+                  {t('appFooterTitle.policyTitle')}
                 </a>
                 <a className="hover:opacity-75" href="">
-                  {' '}
-                  Terms & Conditions{' '}
+                  {t('appFooterTitle.termsTitle')}
                 </a>
                 <a className="hover:opacity-75" href="">
-                  {' '}
-                  Returns Policy{' '}
+                  {t('appFooterTitle.returnPolicy')}
                 </a>
               </div>
 
-              <p className="mt-4 sm:mt-0">&copy; 2022 Company Name.</p>
+              <p className="mt-4 sm:mt-0">
+                &copy; {t('appFooterTitle.companyTitle')}
+              </p>
             </div>
 
             <p className="mt-8 text-xs text-gray-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              mollitia quia quod repellendus. Porro harum, odio dolore
-              perspiciatis praesentium provident esse consequatur quibusdam
-              aperiam, cupiditate omnis modi in quasi? In, maxime odio vel
-              repellat sed earum? Debitis quaerat facilis animi. Odio natus
-              nostrum laboriosam impedit magnam praesentium asperiores
-              consectetur ipsum.
+              {t('appFooterTitle.lastTitle')}
             </p>
           </div>
         </div>

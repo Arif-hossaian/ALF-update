@@ -46,7 +46,7 @@ const AboutSection: React.FC = () => {
           </Link>
         </div>
         <NcImage
-          src="https://i.ibb.co/c19gc9K/A-7.jpg"
+          src="https://res.cloudinary.com/arifscloud/image/upload/v1657362441/alf-images/A-7_ytgmi7.jpg"
           alt="About_image"
           className="block w-full h-full object-cover animate-pulse rounded-md overflow-hidden border-double border-4 border-gray-300 transform transition-all hover:scale-105"
         />

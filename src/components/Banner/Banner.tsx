@@ -1,14 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useScroll } from '../../hooks/useScroll';
-import NcImage from '../../shared/NcImage/NcImage';
 
 const Banner: React.FC = () => {
   const { t } = useTranslation(['banner']);
   const [element] = useScroll();
   return (
     <div
-      className="bg-gradient-to-r from-cyan-100 to-gray-200 py-16"
+      className="bg-gradient-to-r from-cyan-200 to-gray-200 py-16"
       ref={element as unknown as React.RefObject<HTMLDivElement>}
     >
       <div className="mx-auto mt-5 md:max-w-screen-2xl lg:max-w-screen-2xl">
@@ -23,16 +22,11 @@ const Banner: React.FC = () => {
               </span>
             </span>
           </h1>
-          <NcImage
-            src="https://i.ibb.co/YdTq7wg/banner-alf.png"
-            alt="Banner"
-            className="block h-full w-full object-cover overflow-hidden"
-          />
-          {/* <img
-            src="https://i.ibb.co/YdTq7wg/banner-alf.png"
+          <img
+            src="https://res.cloudinary.com/arifscloud/image/upload/v1657363395/alf-images/banner-alf_1_1_v9xamu.png"
             alt="Banner"
             className="block h-1/2 w-full object-cover overflow-hidden sm:object-cover"
-          /> */}
+          />
         </section>
       </div>
     </div>

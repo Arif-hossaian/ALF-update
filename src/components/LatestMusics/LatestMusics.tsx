@@ -10,8 +10,8 @@ const LatestMusics: React.FC = () => {
     <div className="py-16 mt-7">
       <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-5 xs:grid-cols-1">
         <NcImage
-          src="https://i.ibb.co/mR0Wb63/A-17.jpg"
-          alt="LatestMusics"
+          src="https://res.cloudinary.com/arifscloud/image/upload/v1657362446/alf-images/A-17_mzr1ou.jpg"
+          alt="Abdul_alim_Cover"
           className="block w-full h-full  animate-pulse transform transition-all hover:scale-105"
         />
         <h1>
