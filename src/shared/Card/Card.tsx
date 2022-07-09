@@ -8,7 +8,7 @@ const Card: React.FC<{ className?: string; children?: any }> = ({
   return (
     <div
       className={clsx(
-        'rounded-2xl border border-slate-200 bg-white p-6 shadow-xl dark:border-slate-700 dark:bg-slate-800',
+        'rounded-2xl border border-slate-200 bg-white p-6 shadow-xl',
         className
       )}
     >
