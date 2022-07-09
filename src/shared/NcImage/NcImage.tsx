@@ -2,6 +2,7 @@
 import React, {
   FC,
   ImgHTMLAttributes,
+  memo,
   useEffect,
   useRef,
   useState,
@@ -91,4 +92,4 @@ const NcImage: FC<NcImageProps> = ({
   );
 };
 
-export default NcImage;
+export default memo(NcImage);

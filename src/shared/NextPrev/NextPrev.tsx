@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import twFocusClass from '../../utils/twFocusClass';
 
 export interface NextPrevProps {
@@ -52,4 +52,4 @@ const NextPrev: React.FC<NextPrevProps> = ({
   );
 };
 
-export default NextPrev;
+export default memo(NextPrev);

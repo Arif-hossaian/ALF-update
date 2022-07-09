@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, ReactNode } from 'react';
+import React, { HTMLAttributes, memo, ReactNode } from 'react';
 import NextPrev from '../NextPrev/NextPrev';
 
 export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
@@ -43,4 +43,4 @@ const Heading: React.FC<HeadingProps> = ({
   );
 };
 
-export default Heading;
+export default memo(Heading);
