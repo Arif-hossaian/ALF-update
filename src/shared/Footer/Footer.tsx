@@ -8,12 +8,12 @@ const Footer: React.FC = () => {
   return (
     <div className="mt-12">
       <hr />
-      <footer className="text-white bg-gradient-to-r from-pink-500 via-green-500 to-yellow-500 lg:grid lg:grid-cols-5">
+      <footer className="text-white bg-gradient-to-r from-pink-500 via-green-500 to-yellow-600 lg:grid lg:grid-cols-5">
         <aside className="hidden lg:relative lg:col-span-2 lg:block">
           <NcImage
             className="absolute inset-0 object-cover w-full h-full"
-            src="https://images.unsplash.com/photo-1624456735729-03594a40c5fb"
-            alt="Comic Graphic"
+            src="https://i.ibb.co/CmWMXR9/abdul-alim-logo.jpg"
+            alt="Footer_cover"
           />
         </aside>
 
