@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useScroll } from '../../hooks/useScroll';
+import NcImage from '../../shared/NcImage/NcImage';
 
 const Banner: React.FC = () => {
   const { t } = useTranslation(['banner']);
@@ -22,12 +23,16 @@ const Banner: React.FC = () => {
               </span>
             </span>
           </h1>
-
-          <img
+          <NcImage
+            src="https://i.ibb.co/YdTq7wg/banner-alf.png"
+            alt="Banner"
+            className="block h-full w-full object-cover overflow-hidden"
+          />
+          {/* <img
             src="https://i.ibb.co/YdTq7wg/banner-alf.png"
             alt="Banner"
             className="block h-1/2 w-full object-cover overflow-hidden sm:object-cover"
-          />
+          /> */}
         </section>
       </div>
     </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Button } from '../../shared/Button';
+import NcImage from '../../shared/NcImage/NcImage';
 
 const AboutSection: React.FC = () => {
   const { t } = useTranslation(['about']);
@@ -10,7 +11,7 @@ const AboutSection: React.FC = () => {
       <h1 className="text-center text-green-400 md:text-5xl xs:text-md text-bold">
         {t('appAboutTitle.title')}
       </h1>
-      <div className="flex flex-col lg:flex-row lg:items-center mt-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-5 xs:grid-cols-1 mt-9">
         <div>
           <span className="mb-4 space-y-4 ml-6 inline-block font-semibold text-gray-900 md:text-5xl xs:text-lg">
             <div>{t('appAboutTitle.subTitle1')}</div>
@@ -44,9 +45,9 @@ const AboutSection: React.FC = () => {
             </Button>
           </Link>
         </div>
-        <img
+        <NcImage
           src="https://i.ibb.co/c19gc9K/A-7.jpg"
-          alt="LatestMusics"
+          alt="About_image"
           className="block w-full h-full object-cover animate-pulse rounded-md overflow-hidden border-double border-4 border-gray-300 transform transition-all hover:scale-105"
         />
       </div>

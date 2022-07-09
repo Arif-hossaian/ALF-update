@@ -2,16 +2,17 @@ import React, { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Button } from '../../shared/Button';
+import NcImage from '../../shared/NcImage/NcImage';
 
 const LatestMusics: React.FC = () => {
   const { t } = useTranslation(['music']);
   return (
-    <div className="py-16">
-      <div className="flex flex-col lg:flex-row lg:items-center">
-        <img
+    <div className="py-16 mt-7">
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-5 xs:grid-cols-1">
+        <NcImage
           src="https://i.ibb.co/mR0Wb63/A-17.jpg"
           alt="LatestMusics"
-          className="block w-full h-full object-fit overflow-hidden animate-pulse transform transition-all hover:scale-105"
+          className="block w-full h-full  animate-pulse transform transition-all hover:scale-105"
         />
         <h1>
           <span className="mb-4 space-y-4 ml-6 inline-block font-bold text-gray-900 dark:text-gray-50 md:text-7xl">
