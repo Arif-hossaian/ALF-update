@@ -92,47 +92,8 @@ const Footer: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 lg:col-span-2 md:grid-cols-3">
-              <div className="text-center sm:text-left">
-                <Animation animateIn="fadeInUp">
-                  <p className="text-lg font-medium text-gray-900">
-                    {t('appFooterTitle.aboutUs')}
-                  </p>
-
-                  <nav className="mt-8">
-                    <ul className="space-y-4 text-sm">
-                      <li>
-                        <a
-                          className="text-gray-700 transition hover:text-gray-700/75"
-                          href="/"
-                        >
-                          {t('appFooterTitle.aboutUsSubTitle1')}
-                        </a>
-                      </li>
-
-                      <li>
-                        <a
-                          className="text-gray-700 transition hover:text-gray-700/75"
-                          href="/"
-                        >
-                          {t('appFooterTitle.aboutUsSubTitle2')}
-                        </a>
-                      </li>
-
-                      <li>
-                        <a
-                          className="text-gray-700 transition hover:text-gray-700/75"
-                          href="/"
-                        >
-                          {t('appFooterTitle.aboutUsSubTitle3')}
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </Animation>
-              </div>
-
-              <div className="text-center sm:text-left">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 lg:col-span-2 md:grid-cols-2">
+              <div className="text-center md:ml-28 lg:ml-28 sm:text-left">
                 <Animation animateIn="fadeInUp">
                   <p className="text-lg font-medium text-gray-900">
                     {t('appFooterTitle.HelpfulLinks')}
@@ -166,11 +127,6 @@ const Footer: React.FC = () => {
                           <span className="text-gray-700 transition group-hover:text-gray-700/75">
                             {t('appFooterTitle.HelpfulLinksSubTitle3')}
                           </span>
-
-                          <span className="relative flex w-2 h-2 -mr-2">
-                            <span className="absolute inline-flex w-full h-full bg-teal-400 rounded-full opacity-75 animate-ping"></span>
-                            <span className="relative inline-flex w-2 h-2 bg-teal-500 rounded-full"></span>
-                          </span>
                         </a>
                       </li>
                     </ul>
@@ -188,7 +144,7 @@ const Footer: React.FC = () => {
                     <li>
                       <a
                         className="flex items-center justify-center gap-1.5 sm:justify-start"
-                        href="/"
+                        href="mailto:abdulalimfoundationbd@gmail.com"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -206,7 +162,7 @@ const Footer: React.FC = () => {
                         </svg>
 
                         <span className="text-gray-700">
-                          {t('appFooterTitle.Contact_us')}
+                          {t('appFooterTitle.email')}
                         </span>
                       </a>
                     </li>
@@ -214,7 +170,7 @@ const Footer: React.FC = () => {
                     <li>
                       <a
                         className="flex items-center justify-center gap-1.5 sm:justify-start"
-                        href="/"
+                        href="tel:+880 1712121212"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +230,7 @@ const Footer: React.FC = () => {
                 <span className="block sm:inline">All rights reserved.</span>
 
                 <a
-                  className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+                  className="inline-block text-teal-600 ml-1 underline transition hover:text-teal-600/75"
                   href="/"
                 >
                   Terms & Conditions
@@ -291,7 +247,7 @@ const Footer: React.FC = () => {
               </p>
 
               <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-                &copy; 2022 Abdul Alim Organization
+                &copy; 2022 Abdul Alim Foundation
               </p>
             </div>
           </div>
