@@ -25,7 +25,7 @@ const ImageSwiper: React.FC = () => {
         slidesPerView={3}
         spaceBetween={30}
         modules={[Pagination]}
-        className="mySwiper mt-10"
+        className="mySwiper mt-10 xs:hidden"
       >
         {galleryPhotos.map((item, i) => (
           <SwiperSlide className="" key={i}>

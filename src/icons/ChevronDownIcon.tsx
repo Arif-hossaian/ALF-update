@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TimeIcon: React.FC = () => {
+const ChevronDownIcon: React.FC = () => {
   return (
-    <div className=" text-gray-400">
+    <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6"
@@ -11,14 +11,10 @@ const TimeIcon: React.FC = () => {
         stroke="currentColor"
         strokeWidth={2}
       >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
       </svg>
     </div>
   );
 };
 
-export default TimeIcon;
+export default ChevronDownIcon;

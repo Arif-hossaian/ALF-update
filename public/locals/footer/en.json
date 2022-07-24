@@ -1,22 +1,17 @@
 {
   "appFooterTitle": {
-    "callTitle": "CALL",
-    "officeHourTitle": "Monday to Friday: 10am - 5pm",
-    "weekendTitle": "Weekend: 10am - 3pm",
-    "supportTitle1": "Support",
-    "supportSubTitle1": "Contact",
-    "supportSubTitle2": "FAQs",
-    "supportSubTitle3": "Live Chat",
-    "supportSubTitle4": "Forums",
-    "othersTitle": "Others",
-    "othersSubTitle1": "Careers",
-    "othersSubTitle2": "Sessions",
-    "othersSubTitle3": "Help",
-    "othersSubTitle4": "Review",
-    "policyTitle": "Privacy Policy",
-    "termsTitle": "Terms & Conditions",
-    "returnPolicy": "Returns Policy",
-    "companyTitle": "2022 ALF Organization",
-    "lastTitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here"
+    "footerTitle": "Abdul ALim Organization is a non-profit organization",
+    "aboutUs": "About Us",
+    "aboutUsSubTitle1": "History",
+    "aboutUsSubTitle2": "Forums",
+    "aboutUsSubTitle3": "Careers",
+    "HelpfulLinks": "Helpful Links",
+    "HelpfulLinksSubTitle1": "Support",
+    "HelpfulLinksSubTitle2": "Chats",
+    "HelpfulLinksSubTitle3": "FAQs",
+    "Contact_us": "Contact Us",
+    "email": "abdulalim@gmail.com",
+    "phone": "012345678",
+    "location": "Dhaka"
   }
 }

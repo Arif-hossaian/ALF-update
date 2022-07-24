@@ -2,7 +2,7 @@ import React from 'react';
 import { musicCardData } from '../../constants/musicCardData';
 import MusicCard from '../../shared/Card/MusicCard';
 
-const DisplayAllMusics = () => {
+const DisplayAllMusics: React.FC = () => {
   return (
     <div className="mx-auto mt-32">
       <h1 className="text-center text-5xl">Displaying All musics</h1>

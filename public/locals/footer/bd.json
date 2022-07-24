@@ -1,22 +1,17 @@
 {
   "appFooterTitle": {
-    "callTitle": "ফোন",
-    "officeHourTitle": "সোমবার থেকে শুক্রবার: সকাল 10 টা - বিকাল 5 টা",
-    "weekendTitle": "সপ্তাহান্তে: সকাল 10 টা - বিকাল 3 টা",
-    "supportTitle1": "সহায়তা",
-    "supportSubTitle1": "যোগাযোগ",
-    "supportSubTitle2": "প্রশ্নাবলী",
-    "supportSubTitle3": "সরাসরি কথোপকথন",
-    "supportSubTitle4": "ফোরাম",
-    "othersTitle": "অন্যান্য",
-    "othersSubTitle1": "কেরিয়ার",
-    "othersSubTitle2": "অধিবেশন",
-    "othersSubTitle3": "সাহায্য",
-    "othersSubTitle4": "পুনঃমূল্যায়ন",
-    "policyTitle": "গোপনীয়তা নীতি",
-    "termsTitle": "শর্তাবলী",
-    "returnPolicy": "ফেরত বেবস্থা",
-    "companyTitle": "2022 ALF সংস্থা",
-    "lastTitle": "এটি একটি দীর্ঘ-স্থাপিত সত্য যে একটি পাঠক একটি পৃষ্ঠার পাঠযোগ্য বিষয়বস্তু দ্বারা বিভ্রান্ত হবে যখন এটির বিন্যাসটি দেখবে। ব্যবহার করার বিষয় হল যে এটিতে অক্ষরগুলির একটি কম-বেশি স্বাভাবিক বন্টন রয়েছে, 'এখানে সামগ্রী' ব্যবহার করার বিপরীতে"
+    "footerTitle": "আব্দুল আলিম অর্গানাইজেশন একটি অলাভজনক প্রতিষ্ঠান",
+    "aboutUs": "আমাদের সম্পর্কে",
+    "aboutUsSubTitle1": "ইতিহাস",
+    "aboutUsSubTitle2": "ফোরাম",
+    "aboutUsSubTitle3": "কেরিয়ার",
+    "HelpfulLinks": "সাহা্য্যকারী লিংক",
+    "HelpfulLinksSubTitle1": "সমর্থন",
+    "HelpfulLinksSubTitle2": "চ্যাট",
+    "HelpfulLinksSubTitle3": "প্রশ্নাবলী",
+    "Contact_us": "যোগাযোগ করুন",
+    "email": "abdulalim@gmail.com",
+    "phone": "012345678",
+    "location": "ঢাকা"
   }
 }
