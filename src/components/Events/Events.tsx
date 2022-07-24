@@ -3,7 +3,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import LocationIcon from '../../icons/LocationIcon';
 import MusicIcon from '../../icons/MusicIcon';
-import TimeIcon from '../../icons/TimeIcon';
 import Animation from '../../shared/Animation/Animation';
 import { Button } from '../../shared/Button';
 import Card from '../../shared/Card/Card';
@@ -41,19 +40,13 @@ const Events: React.FC = () => {
                 lorem lorem lorem lorem
               </span>
             </div>
-            <div className="ml-auto">
-              <div className="md:flex md:justify-between items-center xs:flex xs:justify-center">
-                <div>
-                  <LocationIcon />
-                </div>
-                <p className="text-sm font-light">Dhaka, Bangladesh</p>
-              </div>
-              <div className="md:flex md:justify-between items-center xs:flex xs:justify-center">
-                <div>
-                  <TimeIcon />
-                </div>
-                <p className="text-sm font-light ml-2">lorem lorem lorem lor</p>
-              </div>
+
+            <div className="ml-auto flex items-start justify-center gap-1.5 sm:justify-start">
+              <LocationIcon />
+
+              <address className="-mt-0.5 not-italic text-gray-700">
+                Dhaka, Bangladesh
+              </address>
             </div>
             <div className="ml-auto mb-auto">
               <Button variant="ghost" size="md">
@@ -79,20 +72,12 @@ const Events: React.FC = () => {
                 lorem lorem lorem lorem
               </span>
             </div>
-            <div className="ml-auto">
-              <div className="md:flex md:justify-between items-center xs:flex xs:justify-center">
-                <LocationIcon />
+            <div className="ml-auto flex items-start justify-center gap-1.5 sm:justify-start">
+              <LocationIcon />
 
-                <p className="text-sm font-light">Dhaka, Bangladesh</p>
-              </div>
-              <div className="md:flex md:justify-between items-center xs:flex xs:justify-center">
-                <TimeIcon />
-
-                <p className="text-sm font-light ml-2">
-                  {' '}
-                  lorem lorem lorem lor
-                </p>
-              </div>
+              <address className="-mt-0.5 not-italic text-gray-700">
+                Dhaka, Bangladesh
+              </address>
             </div>
             <div className="ml-auto mb-auto">
               <Button variant="ghost" size="md">

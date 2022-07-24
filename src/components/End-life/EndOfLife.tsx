@@ -9,7 +9,7 @@ const EndOfLife: React.FC = () => {
   const { t } = useTranslation(['endOfLife']);
   return (
     <div className="py-16">
-      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-5 xs:grid-cols-1 mt-20">
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-16 xs:grid-cols-1 mt-20">
         <Animation animateIn="fadeInLeft" delay={0.2 * 1000}>
           <div>
             <span className="mb-4 space-y-5 ml-6 inline-block font-semibold text-green-400 md:text-5xl xs:text-lg">
@@ -36,7 +36,7 @@ const EndOfLife: React.FC = () => {
           <NcImage
             src="https://res.cloudinary.com/arifscloud/image/upload/v1657362445/alf-images/A-21_eo68lk.jpg"
             alt="About_image"
-            className="mt-10 rounded-md object-cover object-center"
+            className="mt-16 rounded-md object-cover object-center"
           />
         </Animation>
       </div>

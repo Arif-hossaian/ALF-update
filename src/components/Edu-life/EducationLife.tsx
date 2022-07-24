@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Button } from '../../shared/Button';
-import VisibilitySensor from 'react-visibility-sensor';
-import MusicPlayerIcon from '../../icons/MusicPlayerIcon';
 import NcImage from '../../shared/NcImage/NcImage';
 import Animation from '../../shared/Animation/Animation';
 
@@ -17,7 +15,7 @@ const EducationLife: React.FC = () => {
           <NcImage
             src="https://res.cloudinary.com/arifscloud/image/upload/v1657362446/alf-images/A-24_zegigt.jpg"
             alt="Abdul_alim_Cover"
-            className="object-cover object-center mt-10 w-3/4 h-3/4 transform transition-all hover:scale-105"
+            className="object-cover object-center mt-10 w-3/4  transform transition-all hover:scale-105 md:ml-16 lg:ml-16"
           />
         </Animation>
         <Animation animateIn="fadeInUp" delay={0.2 * 1000}>

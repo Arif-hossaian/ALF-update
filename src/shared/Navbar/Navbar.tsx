@@ -52,11 +52,11 @@ const Navbar: React.FC = () => {
               <span className="flex items-center space-x-2">
                 {/* <CompactLogo className="h-[28px] w-[28px]" />
                 <TextLogo className="h-[22px] w-auto fill-gray-900 dark:fill-gray-50" /> */}
-                <img
+                {/* <img
                   src="https://res.cloudinary.com/arifscloud/image/upload/v1658298168/alf-images/b36edaz32rmqcojkbygg.jpg"
                   alt=""
                   className="h-[28px] w-[28px]"
-                />
+                /> */}
 
                 <span className="text-white md:text-3xl sm:text-sm">
                   {t('appTitle.value')}

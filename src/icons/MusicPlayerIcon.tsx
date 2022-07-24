@@ -2,7 +2,7 @@ import React from 'react';
 
 function MusicPlayerIcon() {
   return (
-    <div className="musicPlayer bg-gradient-to-r from-pink-500 via-green-500 to-yellow-600 text-white flex flex-col px-5 w-[100%] border-2 border-green-300 py-3 rounded-xl mt-5">
+    <div className="musicPlayer  text-black flex flex-col px-5 w-[100%] border-2 border-green-300 py-3 rounded-xl mt-5">
       {/* Upper Part */}
       <div className="upperPart flex items-center justify-between">
         {/* profile */}
@@ -14,7 +14,7 @@ function MusicPlayerIcon() {
           />
           <div className="flex flex-col ml-4">
             <span className="text-[1rem]">Porer Jayga</span>
-            <span className="text-sm text-gray-300">Artists:- Abdul Alim</span>
+            <span className="text-sm text-gray-400">Artists:- Abdul Alim</span>
           </div>
         </div>
         <div>
@@ -28,7 +28,7 @@ function MusicPlayerIcon() {
       {/* lower part */}
       <div className="lowerPart flex items-center justify-between mt-5">
         {/* track */}
-        <div className="track flex justify-between text-sm text-gray-200 flex-[2] items-center">
+        <div className="track flex justify-between text-sm text-gray-400 flex-[2] items-center">
           <span>2: 30</span>
           <img
             src="https://res.cloudinary.com/arifscloud/image/upload/v1657555293/alf-images/Group_9_ve6txo.png"
