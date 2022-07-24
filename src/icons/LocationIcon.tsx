@@ -2,7 +2,7 @@ import React from 'react';
 
 const LocationIcon: React.FC = () => {
   return (
-    <div className="h-30 w-30 text-gray-400">
+    <div className=" text-gray-400">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6"

@@ -1,23 +1,27 @@
 import { ChevronRightIcon } from '@heroicons/react/solid';
-import React, { memo } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import LocationIcon from '../../icons/LocationIcon';
 import MusicIcon from '../../icons/MusicIcon';
 import TimeIcon from '../../icons/TimeIcon';
+import Animation from '../../shared/Animation/Animation';
 import { Button } from '../../shared/Button';
 import Card from '../../shared/Card/Card';
 
 const Events: React.FC = () => {
   const { t } = useTranslation(['event']);
   return (
-    <div className="mt-10 mx-auto max-w-screen-lg">
+    <div className="mt-16 mx-auto max-w-screen-lg relative">
       <div className="space-y-4">
         <div className="flex justify-center items-center">
           <MusicIcon />
         </div>
-        <div className="text-7xl font-bold text-center text-green-400">
-          {t('appEventTitle.title')}
-        </div>
+        <Animation animateIn="fadeInUp">
+          <div className="text-5xl font-bold text-center text-green-400">
+            {t('appEventTitle.title')}
+          </div>
+        </Animation>
+
         <p className="text-gray-400 text-center">
           {t('appEventTitle.subTitle')}
         </p>
@@ -42,13 +46,13 @@ const Events: React.FC = () => {
                 <div>
                   <LocationIcon />
                 </div>
-                <p className="text-sm font-light">AKM Auditorium, USA</p>
+                <p className="text-sm font-light">Dhaka, Bangladesh</p>
               </div>
               <div className="md:flex md:justify-between items-center xs:flex xs:justify-center">
                 <div>
                   <TimeIcon />
                 </div>
-                <p className="text-sm font-light">lorem lorem lorem lor</p>
+                <p className="text-sm font-light ml-2">lorem lorem lorem lor</p>
               </div>
             </div>
             <div className="ml-auto mb-auto">
@@ -77,16 +81,17 @@ const Events: React.FC = () => {
             </div>
             <div className="ml-auto">
               <div className="md:flex md:justify-between items-center xs:flex xs:justify-center">
-                <div>
-                  <LocationIcon />
-                </div>
-                <p className="text-sm font-light">AKM Auditorium, USA</p>
+                <LocationIcon />
+
+                <p className="text-sm font-light">Dhaka, Bangladesh</p>
               </div>
               <div className="md:flex md:justify-between items-center xs:flex xs:justify-center">
-                <div>
-                  <TimeIcon />
-                </div>
-                <p className="text-sm font-light">lorem lorem lorem lor</p>
+                <TimeIcon />
+
+                <p className="text-sm font-light ml-2">
+                  {' '}
+                  lorem lorem lorem lor
+                </p>
               </div>
             </div>
             <div className="ml-auto mb-auto">
@@ -102,4 +107,4 @@ const Events: React.FC = () => {
   );
 };
 
-export default memo(Events);
+export default Events;
