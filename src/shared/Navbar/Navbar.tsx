@@ -37,8 +37,8 @@ const Navbar: React.FC = () => {
       className={clsx(
         'fixed inset-x-0 top-0 z-40 h-26 transition-colors duration-300',
         isSticky || location.pathname !== '/'
-          ? 'border-b border-slate-200 bg-[#14A800]'
-          : 'bg-[#14A800]'
+          ? 'border-b border-slate-200 bg-[#f95820]'
+          : 'bg-[#f95820]'
       )}
     >
       <Helmet>
@@ -66,13 +66,13 @@ const Navbar: React.FC = () => {
           </Link>
 
           <div className="relative ml-auto items-center md:flex">
-            <nav className="hidden font-semibold leading-6 text-white dark:text-gray-200 md:block">
+            <nav className="hidden font-semibold leading-6 text-white md:block">
               <ul className="flex space-x-10 text-lg">
                 <li className="relative">
                   <Link to="/allMusics">
                     <div
                       className={clsx(
-                        'peer transition-all duration-150 hover:text-green-200'
+                        'peer transition-all duration-150 hover:text-gray-400'
                       )}
                     >
                       {t('appMenu.music')}
@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
                   <Link to="/events">
                     <div
                       className={clsx(
-                        'peer transition-all duration-150 hover:text-green-200'
+                        'peer transition-all duration-150 hover:text-gray-400'
                       )}
                     >
                       {t('appMenu.event')}
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
                   <Link to="/about">
                     <div
                       className={clsx(
-                        'peer transition-all duration-150 hover:text-green-200'
+                        'peer transition-all duration-150 hover:text-gray-400'
                       )}
                     >
                       {t('appMenu.about')}
@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
                   <Link to="/contact_us">
                     <div
                       className={clsx(
-                        'peer transition-all duration-150 hover:text-green-200'
+                        'peer transition-all duration-150 hover:text-gray-400'
                       )}
                     >
                       {t('appMenu.contact_us')}
@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
 
             <div className="flex items-center space-x-4 pl-6 md:space-x-6">
               <select
-                className="mt-1 block w-14 py-1 px-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-14 py-1 px-2 border text-white border-gray-300 bg-[#f95820] rounded-md shadow-sm focus:outline-none sm:text-sm"
                 name="language"
                 onChange={handleLanguageChange}
               >
@@ -199,7 +199,7 @@ const MenuPopOver = React.memo(({ display }: { display: string }) => {
                 <Link to="/allMusics">
                   <div
                     className={clsx(
-                      'peer block text-lg font-semibold transition-all duration-150 hover:text-green-200'
+                      'peer block text-lg font-semibold transition-all duration-150 hover:text-gray-400'
                     )}
                   >
                     {t('appMenu.music')}

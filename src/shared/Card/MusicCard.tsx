@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import { MusicCardTypes } from '../../types/Types';
 import { Button } from '../Button';
 
@@ -38,4 +38,4 @@ const MusicCard: React.FC<MusicCardTypes> = ({
   );
 };
 
-export default memo(MusicCard);
+export default MusicCard;

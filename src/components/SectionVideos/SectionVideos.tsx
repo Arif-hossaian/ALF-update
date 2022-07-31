@@ -123,7 +123,9 @@ const SectionVideos: FC<SectionVideosProps> = ({
   };
 
   return (
-    <div className={`nc-SectionVideos mt-8 ${className}`}>
+    <div
+      className={`nc-SectionVideos mx-auto max-w-screen-xl px-6 mt-8 ${className}`}
+    >
       <Animation animateIn="fadeIn">
         <div className="flex justify-between items-center">
           <Heading desc={t('appVideoTitle.subTitle1')}>
@@ -131,11 +133,7 @@ const SectionVideos: FC<SectionVideosProps> = ({
           </Heading>
           <div>
             <Link to="/videos">
-              <Button
-                className="ml-5 mt-7 border-solid border-2 border-green-400"
-                variant="ghost"
-                size="md"
-              >
+              <Button className="ml-5 mt-7" variant="outline" size="md">
                 {t('appVideoTitle.videoButton1')}
               </Button>
             </Link>

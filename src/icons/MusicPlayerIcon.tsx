@@ -2,7 +2,7 @@ import React from 'react';
 
 function MusicPlayerIcon() {
   return (
-    <div className="musicPlayer  text-black flex flex-col px-5 w-[100%] border-2 border-green-300 py-3 rounded-xl mt-5">
+    <div className="musicPlayer  text-black flex flex-col px-5 w-[100%] border-2 border-red-400 py-3 rounded-xl mt-5">
       {/* Upper Part */}
       <div className="upperPart flex items-center justify-between">
         {/* profile */}

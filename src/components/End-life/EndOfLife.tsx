@@ -8,11 +8,11 @@ import NcImage from '../../shared/NcImage/NcImage';
 const EndOfLife: React.FC = () => {
   const { t } = useTranslation(['endOfLife']);
   return (
-    <div className="py-16">
-      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-16 xs:grid-cols-1 mt-20">
+    <div className="mb-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-16 xs:grid-cols-1 mt-10">
         <Animation animateIn="fadeInLeft" delay={0.2 * 1000}>
-          <div>
-            <span className="mb-4 space-y-5 ml-6 inline-block font-semibold text-green-400 md:text-5xl xs:text-lg">
+          <div className="mt-16">
+            <span className="mb-4 space-y-5 ml-6 inline-block font-semibold main-text md:text-5xl xs:text-lg">
               <div>{t('appEndOfLife.title')}</div>
             </span>
             <p className="font-light text-md ml-6">
@@ -22,11 +22,7 @@ const EndOfLife: React.FC = () => {
               {t('appEndOfLife.subTitle2')}
             </p>
             <Link to="/more-about">
-              <Button
-                className="ml-5 mt-7 border-solid border-2 border-green-300"
-                variant="ghost"
-                size="md"
-              >
+              <Button className="ml-5 mt-7" variant="outline" size="md">
                 {t('appEndOfLife.button')}
               </Button>
             </Link>
@@ -36,7 +32,7 @@ const EndOfLife: React.FC = () => {
           <NcImage
             src="https://res.cloudinary.com/arifscloud/image/upload/v1657362445/alf-images/A-21_eo68lk.jpg"
             alt="About_image"
-            className="mt-16 rounded-md object-cover object-center"
+            className="mt-20 rounded-md object-cover object-center transform transition-all hover:scale-105"
           />
         </Animation>
       </div>

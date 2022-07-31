@@ -7,21 +7,27 @@ import VisibilitySensor from 'react-visibility-sensor';
 import MusicPlayerIcon from '../../icons/MusicPlayerIcon';
 import NcImage from '../../shared/NcImage/NcImage';
 import Animation from '../../shared/Animation/Animation';
+import ImageAnimation from '../../shared/Animation/ImageAnimation';
+import MusicIcon from '../../icons/81966-girl-listening-to-music.json';
 
 const LatestMusics: React.FC = () => {
   const { t } = useTranslation(['music']);
   const [elementIsVisible, setElementIsVisible] = useState(false);
   return (
-    <div className="py-16 mt-16">
+    <div className="py-16 mt-10">
       <div className="grid md:grid-cols-2 lg:grid-cols-2 xs:grid-cols-1">
-        <NcImage
+        {/* <NcImage
           src="https://i.ibb.co/x3XBSmF/undraw-happy-music-g6wc.png"
           alt="Abdul_alim_Cover"
           className="object-cover object-center mt-10 w-3/4 h-3/4 image-bounce animate-pulse transform transition-all hover:scale-105"
-        />
+        /> */}
+        <div className="-mt-16">
+          <ImageAnimation animationData={MusicIcon} />{' '}
+        </div>
+
         <h1 className="">
           <Animation animateIn="fadeInUp">
-            <span className="mb-4 space-y-4 inline-block font-bold text-green-400 md:text-7xl">
+            <span className="mb-4 space-y-4 inline-block font-bold main-text md:text-7xl">
               <div>{t('appMusicTitle.title')}</div>
             </span>
             <p className="font-thin text-2xl ">
@@ -40,11 +46,7 @@ const LatestMusics: React.FC = () => {
             </VisibilitySensor>
           </Animation>
           <Link to="/allMusics">
-            <Button
-              className="mt-7 border-solid border-2 border-green-400"
-              variant="ghost"
-              size="md"
-            >
+            <Button className="mt-7" variant="outline" size="md">
               {t('appMusicTitle.musicButton1')}
             </Button>
           </Link>

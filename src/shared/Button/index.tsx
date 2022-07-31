@@ -64,19 +64,19 @@ export const Button = React.memo(
         'shadow-indigo-600/40',
       ];
       let btnOutline = [
-        'text-gray-600',
+        'text-white',
         'fill-gray-600',
         'dark:text-white',
-        'hover:text-indigo-600',
-        'hover:fill-indigo-600',
+        'hover:text-black',
+        'hover:fill-red-600',
         'hover:dark:text-indigo-600',
-        'bg-transparent',
-        'hover:bg-indigo-50',
+        'bg-[#f95820]',
+        'hover:bg-white',
         'border',
-        'border-indigo-600',
+        'border-[#f95820]',
       ];
       let btnGhost = [
-        'bg-green-50',
+        'bg-[#FEF027]',
         'text-gray-700',
         'hover:bg-[#14A800]',
         'hover:text-white',
