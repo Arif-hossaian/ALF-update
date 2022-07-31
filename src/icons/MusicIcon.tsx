@@ -5,7 +5,7 @@ const MusicIcon = () => {
     <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-16 w-16 text-green-400"
+        className="h-16 w-16 main-text"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"

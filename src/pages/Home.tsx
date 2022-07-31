@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import AboutSection from '../components/About-alf/AboutSection';
+import AboutSection from './About-alf/AboutSection';
 import Banner from '../components/Banner/Banner';
 import EducationLife from '../components/Edu-life/EducationLife';
 import EndOfLife from '../components/End-life/EndOfLife';
@@ -21,7 +21,7 @@ const Home = () => {
         <Events />
         <LatestMusics />
         <SectionVideos />
-        <AboutSection />
+        {/* <AboutSection /> */}
         <Suspense fallback={<Spinner />}>
           <DisplayImage />
         </Suspense>

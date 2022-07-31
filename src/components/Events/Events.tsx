@@ -2,10 +2,11 @@ import { ChevronRightIcon } from '@heroicons/react/solid';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import LocationIcon from '../../icons/LocationIcon';
-import MusicIcon from '../../icons/MusicIcon';
 import Animation from '../../shared/Animation/Animation';
+import ImageAnimation from '../../shared/Animation/ImageAnimation';
 import { Button } from '../../shared/Button';
 import Card from '../../shared/Card/Card';
+import MusicLogo from '../../icons/lottieflow-multimedia-8-8-f95820-easey.json';
 
 const Events: React.FC = () => {
   const { t } = useTranslation(['event']);
@@ -13,10 +14,12 @@ const Events: React.FC = () => {
     <div className="mt-16 mx-auto max-w-screen-lg relative">
       <div className="space-y-4">
         <div className="flex justify-center items-center">
-          <MusicIcon />
+          <div className="text-center w-20 h-20">
+            <ImageAnimation animationData={MusicLogo} />
+          </div>
         </div>
         <Animation animateIn="fadeInUp">
-          <div className="text-5xl font-bold text-center text-green-400">
+          <div className="text-5xl font-bold text-center main-text">
             {t('appEventTitle.title')}
           </div>
         </Animation>
@@ -49,9 +52,9 @@ const Events: React.FC = () => {
               </address>
             </div>
             <div className="ml-auto mb-auto">
-              <Button variant="ghost" size="md">
+              <Button variant="outline" size="md">
                 Read More
-                <ChevronRightIcon className="ml-2 h-5 w-5 fill-green-500" />
+                <ChevronRightIcon className="ml-2 h-5 w-5 fill-[#FEF027]" />
               </Button>
             </div>
           </div>
@@ -80,9 +83,9 @@ const Events: React.FC = () => {
               </address>
             </div>
             <div className="ml-auto mb-auto">
-              <Button variant="ghost" size="md">
+              <Button variant="outline" size="md">
                 Read More
-                <ChevronRightIcon className="ml-2 h-5 w-5 fill-green-500" />
+                <ChevronRightIcon className="ml-2 h-5 w-5 fill-[#FEF027]" />
               </Button>
             </div>
           </div>

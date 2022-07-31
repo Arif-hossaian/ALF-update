@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, memo, ReactNode } from 'react';
+import React, { HTMLAttributes, ReactNode } from 'react';
 import NextPrev from '../NextPrev/NextPrev';
 
 export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
@@ -11,7 +11,7 @@ export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
 const Heading: React.FC<HeadingProps> = ({
   children,
   desc = 'Discover the most outstanding articles in all topics of life. ',
-  className = 'mb-10 md:mb-12 text-neutral-900 dark:text-neutral-50',
+  className = 'mb-10 md:mb-12 main-text dark:text-neutral-50',
   isCenter = false,
   hasNextPrev = false,
   ...args
@@ -43,4 +43,4 @@ const Heading: React.FC<HeadingProps> = ({
   );
 };
 
-export default memo(Heading);
+export default Heading;

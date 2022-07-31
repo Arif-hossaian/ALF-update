@@ -12,15 +12,15 @@ const Footer: React.FC = () => {
         <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
-              <div className="flex justify-center text-teal-600 sm:justify-start">
+              <div className="flex justify-center sm:justify-start">
                 <img
                   src="https://res.cloudinary.com/arifscloud/image/upload/v1658298168/alf-images/b36edaz32rmqcojkbygg.jpg"
                   alt=""
-                  className="h-[28px] w-[28px]"
+                  className="h-[96px] w-[96px]"
                 />
               </div>
               <Animation animateIn="fadeInLeft">
-                <p className="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-500 sm:max-w-xs sm:mx-0 sm:text-left">
+                <p className="max-w-md mx-auto mt-6 leading-relaxed text-center main-text sm:max-w-xs sm:mx-0 sm:text-left">
                   {t('appFooterTitle.footerTitle')}
                 </p>
               </Animation>
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                     href="/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="text-teal-700 transition hover:text-teal-700/75"
+                    className="main-text transition hover:text-red-300"
                   >
                     <span className="sr-only">Facebook</span>
                     <svg
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                     href="/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="text-teal-700 transition hover:text-teal-700/75"
+                    className="main-text transition hover:text-red-300"
                   >
                     <span className="sr-only">Instagram</span>
                     <svg
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                     href="/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="text-teal-700 transition hover:text-teal-700/75"
+                    className="main-text transition hover:text-red-300"
                   >
                     <span className="sr-only">Twitter</span>
                     <svg
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 lg:col-span-2 md:grid-cols-2">
               <div className="text-center md:ml-28 lg:ml-28 sm:text-left">
                 <Animation animateIn="fadeInUp">
-                  <p className="text-lg font-medium text-gray-900">
+                  <p className="text-lg font-medium main-text">
                     {t('appFooterTitle.HelpfulLinks')}
                   </p>
 
@@ -136,7 +136,7 @@ const Footer: React.FC = () => {
 
               <div className="text-center sm:text-left">
                 <Animation animateIn="fadeInUp">
-                  <p className="text-lg font-medium text-gray-900">
+                  <p className="text-lg font-medium main-text">
                     {t('appFooterTitle.Contact_us')}
                   </p>
 
@@ -148,7 +148,7 @@ const Footer: React.FC = () => {
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-5 h-5 text-gray-900 shrink-0"
+                          className="w-5 h-5 main-text shrink-0"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -174,7 +174,7 @@ const Footer: React.FC = () => {
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-5 h-5 text-gray-900 shrink-0"
+                          className="w-5 h-5 main-text shrink-0"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -196,7 +196,7 @@ const Footer: React.FC = () => {
                     <li className="flex items-start justify-center gap-1.5 sm:justify-start">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-gray-900 shrink-0"
+                        className="w-5 h-5 main-text shrink-0"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -230,23 +230,16 @@ const Footer: React.FC = () => {
                 <span className="block sm:inline">All rights reserved.</span>
 
                 <a
-                  className="inline-block text-teal-600 ml-1 underline transition hover:text-teal-600/75"
+                  className="inline-block ml-1 underline main-text transition hover:text-red-600"
                   href="/"
                 >
                   Terms & Conditions
                 </a>
 
                 <span>&middot;</span>
-
-                <a
-                  className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
-                  href="/"
-                >
-                  Privacy Policy
-                </a>
               </p>
 
-              <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
+              <p className="mt-4 text-sm main-text sm:order-first sm:mt-0">
                 &copy; 2022 Abdul Alim Foundation
               </p>
             </div>

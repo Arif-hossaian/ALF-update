@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import clsx from 'clsx';
 
 const Card: React.FC<{ className?: string; children?: any }> = ({
@@ -17,4 +17,4 @@ const Card: React.FC<{ className?: string; children?: any }> = ({
   );
 };
 
-export default memo(Card);
+export default Card;
