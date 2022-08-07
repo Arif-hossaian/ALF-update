@@ -88,7 +88,7 @@ const Navbar: React.FC = () => {
                       className={
                         i18n.language === 'en'
                           ? 'en-font peer transition-all duration-150 hover:text-gray-400'
-                          : 'bd-font-title peer transition-all duration-150 hover:text-gray-400'
+                          : 'bd-font-subTitle peer transition-all duration-150 hover:text-gray-400'
                       }
                     >
                       {t('appMenu.music')}
@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
                       className={
                         i18n.language === 'en'
                           ? 'en-font peer transition-all duration-150 hover:text-gray-400'
-                          : 'bd-font-title peer transition-all duration-150 hover:text-gray-400'
+                          : 'bd-font-subTitle peer transition-all duration-150 hover:text-gray-400'
                       }
                     >
                       {t('appMenu.event')}
@@ -114,7 +114,7 @@ const Navbar: React.FC = () => {
                       className={
                         i18n.language === 'en'
                           ? 'en-font peer transition-all duration-150 hover:text-gray-400'
-                          : 'bd-font-title peer transition-all duration-150 hover:text-gray-400'
+                          : 'bd-font-subTitle peer transition-all duration-150 hover:text-gray-400'
                       }
                     >
                       {t('appMenu.about')}
@@ -127,7 +127,7 @@ const Navbar: React.FC = () => {
                       className={
                         i18n.language === 'en'
                           ? 'en-font peer transition-all duration-150 hover:text-gray-400'
-                          : 'bd-font-title peer transition-all duration-150 hover:text-gray-400'
+                          : 'bd-font-subTitle peer transition-all duration-150 hover:text-gray-400'
                       }
                     >
                       {t('appMenu.contact_us')}
@@ -142,7 +142,7 @@ const Navbar: React.FC = () => {
                 className={
                   i18n.language === 'en'
                     ? 'en-font mt-1 block w-14 py-1 px-2 border text-white border-gray-300 bg-[#f95820] rounded-md shadow-sm focus:outline-none sm:text-sm'
-                    : 'bd-font-title mt-1 block w-14 py-1 px-2 border text-white border-gray-300 bg-[#f95820] rounded-md shadow-sm focus:outline-none sm:text-sm'
+                    : 'bd-font-subTitle mt-1 block w-14 py-1 px-2 border text-white border-gray-300 bg-[#f95820] rounded-md shadow-sm focus:outline-none sm:text-sm'
                 }
                 name="language"
                 onChange={handleLanguageChange}
