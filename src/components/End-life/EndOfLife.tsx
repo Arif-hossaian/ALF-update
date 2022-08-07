@@ -24,8 +24,8 @@ const EndOfLife: React.FC = () => {
             <p
               className={
                 i18n.language === 'en'
-                  ? 'en-font font-light text-md ml-6'
-                  : 'bd-font-subTitle font-light text-md ml-6 mt-3'
+                  ? 'en-font font-light text-lg ml-6'
+                  : 'bd-font-subTitle font-light text-lg ml-6 mt-3'
               }
             >
               {t('appEndOfLife.subTitle1')}
@@ -33,8 +33,8 @@ const EndOfLife: React.FC = () => {
             <p
               className={
                 i18n.language === 'en'
-                  ? 'en-font font-light text-md ml-6'
-                  : 'bd-font-subTitle font-light text-md ml-6'
+                  ? 'en-font font-light text-lg ml-6'
+                  : 'bd-font-subTitle font-light text-lg ml-6'
               }
             >
               {t('appEndOfLife.subTitle2')}

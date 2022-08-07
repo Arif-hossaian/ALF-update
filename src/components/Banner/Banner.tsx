@@ -16,8 +16,8 @@ const Banner: React.FC = () => {
             <h2
               className={
                 i18n.language === 'en'
-                  ? 'en-font relative text-4xl font-semibold text-[#F95820]'
-                  : 'bd-font-title relative text-4xl font-semibold text-[#F95820]'
+                  ? 'en-font relative text-5xl font-semibold text-[#F95820]'
+                  : 'bd-font-title relative text-5xl font-semibold text-[#F95820]'
               }
             >
               {t('appBanner.title')}
@@ -34,7 +34,13 @@ const Banner: React.FC = () => {
             </p>
             <div className="mt-8">
               <Link to="/more-about">
-                <Button variant="outline" size="md">
+                <Button
+                  variant="outline"
+                  size="md"
+                  className={
+                    i18n.language === 'en' ? 'en-font ' : 'bd-font-subTitle '
+                  }
+                >
                   {t('appBanner.subButton1')}
                 </Button>
               </Link>

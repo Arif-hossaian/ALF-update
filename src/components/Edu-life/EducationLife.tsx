@@ -19,7 +19,7 @@ const EducationLife: React.FC = () => {
           />
         </Animation>
         <Animation animateIn="fadeInUp" delay={0.2 * 1000}>
-          <span className="mb-4 mt-14 space-y-4 inline-block font-bold main-text text-4xl">
+          <span className="mb-4 mt-14 space-y-4 inline-block font-bold main-text text-5xl">
             <div
               className={i18n.language === 'en' ? 'en-font ' : 'bd-font-title'}
             >
@@ -38,8 +38,8 @@ const EducationLife: React.FC = () => {
           <p
             className={
               i18n.language === 'en'
-                ? 'en-font font-light text-md'
-                : 'bd-font-subTitle font-light text-md'
+                ? 'en-font font-light text-lg'
+                : 'bd-font-subTitle font-light mt-2 text-lg'
             }
           >
             {t('appEducationLife.subTitle2')}

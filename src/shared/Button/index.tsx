@@ -36,10 +36,7 @@ export const Button = React.memo(
 
       const sharedClasses = [
         'focus:outline-none',
-        'focus:ring-2',
-        'focus:ring-indigo-400',
-        'focus:ring-offset-2',
-        'focus:ring-offset-indigo-50',
+        'focus:ring-red-400',
         'font-semibold',
         'rounded-full',
         'inline-flex',
@@ -56,12 +53,13 @@ export const Button = React.memo(
 
       // handle variants
       let btnSolid = [
-        'bg-indigo-600',
-        'hover:bg-indigo-700',
+        'bg-[#f95820]',
+        'hover:text-black',
+        'hover:fill-red-600',
         'text-white',
         'fill-white',
         'shadow-lg',
-        'shadow-indigo-600/40',
+        'shadow-red-600/40',
       ];
       let btnOutline = [
         'text-white',
@@ -69,7 +67,6 @@ export const Button = React.memo(
         'dark:text-white',
         'hover:text-black',
         'hover:fill-red-600',
-        'hover:dark:text-indigo-600',
         'bg-[#f95820]',
         'hover:bg-white',
         'border',

@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
                   </p>
 
                   <nav className="mt-8">
-                    <ul className="space-y-4 text-sm">
+                    <ul className="space-y-4 text-lg">
                       <li>
                         <a
                           className={
@@ -172,7 +172,7 @@ const Footer: React.FC = () => {
                     {t('appFooterTitle.Contact_us')}
                   </p>
 
-                  <ul className="mt-8 space-y-4 text-sm">
+                  <ul className="mt-8 space-y-4 text-lg">
                     <li>
                       <a
                         className="flex items-center justify-center gap-1.5 sm:justify-start"
@@ -276,7 +276,7 @@ const Footer: React.FC = () => {
 
           <div className="pt-6 mt-12 border-t border-gray-100">
             <div className="text-center sm:flex sm:justify-between sm:text-left">
-              <p className="text-sm text-gray-500">
+              <p className="text-lg text-gray-500">
                 <span className="block sm:inline">All rights reserved.</span>
 
                 <a
