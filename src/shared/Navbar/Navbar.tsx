@@ -48,7 +48,15 @@ const Navbar: React.FC = () => {
         <div className="relative flex items-center">
           <Link to="/">
             <div className="flex-none">
-              <span className="sr-only">{t('appTitle.value')}</span>
+              <span
+                className={
+                  i18n.language === 'en'
+                    ? 'en-font sr-only'
+                    : 'bd-font-title sr-only'
+                }
+              >
+                {t('appTitle.value')}
+              </span>
               <span className="flex items-center space-x-2">
                 {/* <CompactLogo className="h-[28px] w-[28px]" />
                 <TextLogo className="h-[22px] w-auto fill-gray-900 dark:fill-gray-50" /> */}
@@ -58,7 +66,13 @@ const Navbar: React.FC = () => {
                   className="h-[28px] w-[28px]"
                 /> */}
 
-                <span className="text-white md:text-3xl sm:text-sm">
+                <span
+                  className={
+                    i18n.language === 'en'
+                      ? 'en-font text-white md:text-3xl sm:text-sm'
+                      : 'bd-font-title text-white md:text-3xl sm:text-sm'
+                  }
+                >
                   {t('appTitle.value')}
                 </span>
               </span>
@@ -71,9 +85,11 @@ const Navbar: React.FC = () => {
                 <li className="relative">
                   <Link to="/allMusics">
                     <div
-                      className={clsx(
-                        'peer transition-all duration-150 hover:text-gray-400'
-                      )}
+                      className={
+                        i18n.language === 'en'
+                          ? 'en-font peer transition-all duration-150 hover:text-gray-400'
+                          : 'bd-font-title peer transition-all duration-150 hover:text-gray-400'
+                      }
                     >
                       {t('appMenu.music')}
                     </div>
@@ -82,9 +98,11 @@ const Navbar: React.FC = () => {
                 <li className="relative">
                   <Link to="/events">
                     <div
-                      className={clsx(
-                        'peer transition-all duration-150 hover:text-gray-400'
-                      )}
+                      className={
+                        i18n.language === 'en'
+                          ? 'en-font peer transition-all duration-150 hover:text-gray-400'
+                          : 'bd-font-title peer transition-all duration-150 hover:text-gray-400'
+                      }
                     >
                       {t('appMenu.event')}
                     </div>
@@ -93,9 +111,11 @@ const Navbar: React.FC = () => {
                 <li className="relative">
                   <Link to="/about">
                     <div
-                      className={clsx(
-                        'peer transition-all duration-150 hover:text-gray-400'
-                      )}
+                      className={
+                        i18n.language === 'en'
+                          ? 'en-font peer transition-all duration-150 hover:text-gray-400'
+                          : 'bd-font-title peer transition-all duration-150 hover:text-gray-400'
+                      }
                     >
                       {t('appMenu.about')}
                     </div>
@@ -104,9 +124,11 @@ const Navbar: React.FC = () => {
                 <li className="relative">
                   <Link to="/contact_us">
                     <div
-                      className={clsx(
-                        'peer transition-all duration-150 hover:text-gray-400'
-                      )}
+                      className={
+                        i18n.language === 'en'
+                          ? 'en-font peer transition-all duration-150 hover:text-gray-400'
+                          : 'bd-font-title peer transition-all duration-150 hover:text-gray-400'
+                      }
                     >
                       {t('appMenu.contact_us')}
                     </div>
@@ -117,7 +139,11 @@ const Navbar: React.FC = () => {
 
             <div className="flex items-center space-x-4 pl-6 md:space-x-6">
               <select
-                className="mt-1 block w-14 py-1 px-2 border text-white border-gray-300 bg-[#f95820] rounded-md shadow-sm focus:outline-none sm:text-sm"
+                className={
+                  i18n.language === 'en'
+                    ? 'en-font mt-1 block w-14 py-1 px-2 border text-white border-gray-300 bg-[#f95820] rounded-md shadow-sm focus:outline-none sm:text-sm'
+                    : 'bd-font-title mt-1 block w-14 py-1 px-2 border text-white border-gray-300 bg-[#f95820] rounded-md shadow-sm focus:outline-none sm:text-sm'
+                }
                 name="language"
                 onChange={handleLanguageChange}
               >
@@ -139,7 +165,7 @@ export default Navbar;
 
 const MenuPopOver = React.memo(({ display }: { display: string }) => {
   let [isOpen, setIsOpen] = useState(false);
-  const { t } = useTranslation(['header']);
+  const { t, i18n } = useTranslation(['header']);
 
   return (
     <div className={display}>
@@ -190,7 +216,15 @@ const MenuPopOver = React.memo(({ display }: { display: string }) => {
               <span className="flex items-center space-x-2">
                 {/* <CompactLogo className="h-[32px] w-[32px]" />
                 <TextLogo className="h-[22px] w-auto fill-gray-900 dark:fill-gray-50" /> */}
-                <span className="text-white">{t('appTitle.value')}</span>
+                <span
+                  className={
+                    i18n.language === 'en'
+                      ? 'en-font text-white'
+                      : 'bd-font-title text-white'
+                  }
+                >
+                  {t('appTitle.value')}
+                </span>
               </span>
             </a>
 
@@ -198,9 +232,11 @@ const MenuPopOver = React.memo(({ display }: { display: string }) => {
               <li className="relative">
                 <Link to="/allMusics">
                   <div
-                    className={clsx(
-                      'peer block text-lg font-semibold transition-all duration-150 hover:text-gray-400'
-                    )}
+                    className={
+                      i18n.language === 'en'
+                        ? 'en-font peer block text-lg font-semibold transition-all duration-150 hover:text-gray-400'
+                        : 'bd-font-title peer block text-lg font-semibold transition-all duration-150 hover:text-gray-400'
+                    }
                   >
                     {t('appMenu.music')}
                   </div>
@@ -209,9 +245,11 @@ const MenuPopOver = React.memo(({ display }: { display: string }) => {
               <li className="relative">
                 <Link to="/events">
                   <div
-                    className={clsx(
-                      'peer block text-lg font-semibold transition-all duration-150 hover:text-green-200'
-                    )}
+                    className={
+                      i18n.language === 'en'
+                        ? 'en-font peer block text-lg font-semibold transition-all duration-150 hover:text-gray-400'
+                        : 'bd-font-title peer block text-lg font-semibold transition-all duration-150 hover:text-gray-400'
+                    }
                   >
                     {t('appMenu.event')}
                   </div>
@@ -220,9 +258,11 @@ const MenuPopOver = React.memo(({ display }: { display: string }) => {
               <li className="relative">
                 <Link to="/about">
                   <div
-                    className={clsx(
-                      'peer block text-lg font-semibold transition-all duration-150 hover:text-green-200'
-                    )}
+                    className={
+                      i18n.language === 'en'
+                        ? 'en-font peer block text-lg font-semibold transition-all duration-150 hover:text-gray-400'
+                        : 'bd-font-title peer block text-lg font-semibold transition-all duration-150 hover:text-gray-400'
+                    }
                   >
                     {t('appMenu.about')}
                   </div>
@@ -231,9 +271,11 @@ const MenuPopOver = React.memo(({ display }: { display: string }) => {
               <li className="relative">
                 <Link to="/contact_us">
                   <div
-                    className={clsx(
-                      'peer block text-lg font-semibold transition-all duration-150 hover:text-green-200'
-                    )}
+                    className={
+                      i18n.language === 'en'
+                        ? 'en-font peer block text-lg font-semibold transition-all duration-150 hover:text-gray-400'
+                        : 'bd-font-title peer block text-lg font-semibold transition-all duration-150 hover:text-gray-400'
+                    }
                   >
                     {t('appMenu.contact_us')}
                   </div>

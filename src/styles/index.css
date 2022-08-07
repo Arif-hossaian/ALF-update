@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@font-face {
+  font-family: 'myTitleFont';
+  src: url('../font/Li\ Mahfuj\ AK\ Unicode\ Italic.ttf');
+  src: local('Mahfuj Italic'),
+    url('../font/Li\ Mahfuj\ AK\ Unicode\ Italic.ttf') format('ttf'),
+    url('../font/Li\ Mahfuj\ AK\ Unicode\ Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'mySubTitleFont';
+  src: url('../font//Li\ Mainak\ Buniyadi\ Unicode\ Italic.ttf');
+  src: local('Mahfuj'),
+    url('../font//Li\ Mainak\ Buniyadi\ Unicode\ Italic.ttf') format('ttf'),
+    url('../font//Li\ Mainak\ Buniyadi\ Unicode\ Italic.ttf') format('truetype');
+}
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +22,16 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: 'Baloo 2', cursive; */
+}
+.en-font {
   font-family: 'Baloo 2', cursive;
+}
+.bd-font-subTitle {
+  font-family: 'mySubTitleFont';
+}
+.bd-font-title {
+  font-family: myTitleFont;
 }
 .main-text {
   color: #f95820;

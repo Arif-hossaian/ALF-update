@@ -3,7 +3,7 @@ import { Button } from '../../shared/Button';
 
 export default function PageNotFound() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center min-h-screen en-font">
       <h1 className="mb-4 text-5xl font-bold main-text">404</h1>
 
       <h6 className="mb-2 text-center text-3xl font-bold main-text">

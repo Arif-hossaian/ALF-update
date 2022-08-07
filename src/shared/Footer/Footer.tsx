@@ -4,11 +4,11 @@ import { useTranslation } from 'react-i18next';
 import Animation from '../Animation/Animation';
 
 const Footer: React.FC = () => {
-  const { t } = useTranslation(['footer']);
+  const { t, i18n } = useTranslation(['footer']);
   return (
     <div className="mt-12">
       <hr />
-      <footer className="bg-white">
+      <footer style={{ backgroundColor: 'rgba(251, 75, 6, 0.2)' }}>
         <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
@@ -20,7 +20,13 @@ const Footer: React.FC = () => {
                 />
               </div>
               <Animation animateIn="fadeInLeft">
-                <p className="max-w-md mx-auto mt-6 leading-relaxed text-center main-text sm:max-w-xs sm:mx-0 sm:text-left">
+                <p
+                  className={
+                    i18n.language === 'en'
+                      ? 'en-font max-w-md mx-auto text-2xl mt-6 leading-relaxed text-center main-text sm:max-w-xs sm:mx-0 sm:text-left'
+                      : 'bd-font-title max-w-md mx-auto text-2xl mt-6 leading-relaxed text-center main-text sm:max-w-xs sm:mx-0 sm:text-left'
+                  }
+                >
                   {t('appFooterTitle.footerTitle')}
                 </p>
               </Animation>
@@ -95,7 +101,13 @@ const Footer: React.FC = () => {
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 lg:col-span-2 md:grid-cols-2">
               <div className="text-center md:ml-28 lg:ml-28 sm:text-left">
                 <Animation animateIn="fadeInUp">
-                  <p className="text-lg font-medium main-text">
+                  <p
+                    className={
+                      i18n.language === 'en'
+                        ? 'en-font text-2xl font-medium main-text'
+                        : 'bd-font-title text-2xl font-medium main-text'
+                    }
+                  >
                     {t('appFooterTitle.HelpfulLinks')}
                   </p>
 
@@ -103,7 +115,11 @@ const Footer: React.FC = () => {
                     <ul className="space-y-4 text-sm">
                       <li>
                         <a
-                          className="text-gray-700 transition hover:text-gray-700/75"
+                          className={
+                            i18n.language === 'en'
+                              ? 'en-font text-gray-700 transition hover:text-gray-700/75'
+                              : 'bd-font-subTitle text-gray-700 transition hover:text-gray-700/75'
+                          }
                           href="/"
                         >
                           {t('appFooterTitle.HelpfulLinksSubTitle1')}
@@ -112,7 +128,11 @@ const Footer: React.FC = () => {
 
                       <li>
                         <a
-                          className="text-gray-700 transition hover:text-gray-700/75"
+                          className={
+                            i18n.language === 'en'
+                              ? 'en-font text-gray-700 transition hover:text-gray-700/75'
+                              : 'bd-font-subTitle text-gray-700 transition hover:text-gray-700/75'
+                          }
                           href="/"
                         >
                           {t('appFooterTitle.HelpfulLinksSubTitle2')}
@@ -124,7 +144,13 @@ const Footer: React.FC = () => {
                           className="flex group justify-center gap-1.5 sm:justify-start"
                           href="/"
                         >
-                          <span className="text-gray-700 transition group-hover:text-gray-700/75">
+                          <span
+                            className={
+                              i18n.language === 'en'
+                                ? 'en-font text-gray-700 transition hover:text-gray-700/75'
+                                : 'bd-font-subTitle text-gray-700 transition hover:text-gray-700/75'
+                            }
+                          >
                             {t('appFooterTitle.HelpfulLinksSubTitle3')}
                           </span>
                         </a>
@@ -136,7 +162,13 @@ const Footer: React.FC = () => {
 
               <div className="text-center sm:text-left">
                 <Animation animateIn="fadeInUp">
-                  <p className="text-lg font-medium main-text">
+                  <p
+                    className={
+                      i18n.language === 'en'
+                        ? 'en-font text-2xl font-medium main-text'
+                        : 'bd-font-title text-2xl font-medium main-text'
+                    }
+                  >
                     {t('appFooterTitle.Contact_us')}
                   </p>
 
@@ -161,7 +193,13 @@ const Footer: React.FC = () => {
                           />
                         </svg>
 
-                        <span className="text-gray-700">
+                        <span
+                          className={
+                            i18n.language === 'en'
+                              ? 'en-font text-gray-700'
+                              : 'bd-font-subTitle text-gray-700'
+                          }
+                        >
                           {t('appFooterTitle.email')}
                         </span>
                       </a>
@@ -187,7 +225,13 @@ const Footer: React.FC = () => {
                           />
                         </svg>
 
-                        <span className="text-gray-700">
+                        <span
+                          className={
+                            i18n.language === 'en'
+                              ? 'en-font text-gray-700'
+                              : 'bd-font-subTitle text-gray-700'
+                          }
+                        >
                           {t('appFooterTitle.phone')}
                         </span>
                       </a>
@@ -214,7 +258,13 @@ const Footer: React.FC = () => {
                         />
                       </svg>
 
-                      <address className="-mt-0.5 not-italic text-gray-700">
+                      <address
+                        className={
+                          i18n.language === 'en'
+                            ? 'en-font -mt-0.5 not-italic text-gray-700'
+                            : 'bd-font-subTitle -mt-0.5 not-italic text-gray-700'
+                        }
+                      >
                         {t('appFooterTitle.location')}
                       </address>
                     </li>
@@ -230,7 +280,7 @@ const Footer: React.FC = () => {
                 <span className="block sm:inline">All rights reserved.</span>
 
                 <a
-                  className="inline-block ml-1 underline main-text transition hover:text-red-600"
+                  className="inline-block text-lg ml-1 underline main-text transition hover:text-red-600 en-font"
                   href="/"
                 >
                   Terms & Conditions
@@ -239,7 +289,7 @@ const Footer: React.FC = () => {
                 <span>&middot;</span>
               </p>
 
-              <p className="mt-4 text-sm main-text sm:order-first sm:mt-0">
+              <p className="mt-4 text-md main-text sm:order-first sm:mt-0 en-font">
                 &copy; 2022 Abdul Alim Foundation
               </p>
             </div>

@@ -2,7 +2,7 @@
 import { FC } from 'react';
 import ImageAnimation from '../../shared/Animation/ImageAnimation';
 import Card from '../../shared/Card/Card';
-import ContactWithUs from './icons/81732-contact-us.json';
+import ContactWithUs from './icons/lf20_co6ylnld.json';
 import ContactForm from './ContactForm';
 import CallIcon from './icons/lottieflow-ecommerce-14-18-f95820-easey.json';
 import MailIcon from './icons/lottieflow-social-networks-16-9-f95820-easey.json';
@@ -11,11 +11,17 @@ import Animation from '../../shared/Animation/Animation';
 import { useTranslation } from 'react-i18next';
 
 const ContactUs: FC = () => {
-  const { t } = useTranslation(['contact-us']);
+  const { t, i18n } = useTranslation(['contact-us']);
   return (
     <div className="py-16 mt-16">
       <Animation animateIn="fadeInUp">
-        <h1 className="text-center lg:text-5xl text-2xl main-text">
+        <h1
+          className={
+            i18n.language === 'en'
+              ? 'en-font text-center lg:text-5xl text-2xl main-text'
+              : 'bd-font-title text-center lg:text-5xl text-2xl main-text'
+          }
+        >
           {t('appContactUs.title')}
         </h1>
       </Animation>
@@ -31,10 +37,22 @@ const ContactUs: FC = () => {
                   <ImageAnimation animationData={AddressIcon} />
                 </div>
                 <div>
-                  <h1 className="font-semibold text-lg main-text">
+                  <h1
+                    className={
+                      i18n.language === 'en'
+                        ? 'en-font font-semibold text-lg main-text'
+                        : 'bd-font-subTitle font-semibold text-lg main-text'
+                    }
+                  >
                     {t('appContactUs.subTitle1')}
                   </h1>
-                  <p className="font-semi text-sm">
+                  <p
+                    className={
+                      i18n.language === 'en'
+                        ? 'en-font font-semi text-sm'
+                        : 'bd-font-subTitle font-semi text-sm'
+                    }
+                  >
                     {t('appContactUs.subTitle2')}
                   </p>
                 </div>
@@ -44,10 +62,22 @@ const ContactUs: FC = () => {
                   <ImageAnimation animationData={CallIcon} />
                 </div>
                 <div>
-                  <h1 className="font-semibold text-lg main-text">
+                  <h1
+                    className={
+                      i18n.language === 'en'
+                        ? 'en-font font-semibold text-lg main-text'
+                        : 'bd-font-subTitle font-semibold text-lg main-text'
+                    }
+                  >
                     {t('appContactUs.subTitle3')}
                   </h1>
-                  <p className="font-semi text-sm">
+                  <p
+                    className={
+                      i18n.language === 'en'
+                        ? 'en-font font-semi text-sm'
+                        : 'bd-font-subTitle font-semi text-sm'
+                    }
+                  >
                     <a href="tel:+880 1712121212">
                       {t('appContactUs.subTitle4')}
                     </a>
@@ -59,10 +89,22 @@ const ContactUs: FC = () => {
                   <ImageAnimation animationData={MailIcon} />
                 </div>
                 <div>
-                  <h1 className="font-semibold text-lg main-text">
+                  <h1
+                    className={
+                      i18n.language === 'en'
+                        ? 'en-font font-semibold text-lg main-text'
+                        : 'bd-font-subTitle font-semibold text-lg main-text'
+                    }
+                  >
                     {t('appContactUs.subTitle5')}
                   </h1>
-                  <p className="font-semi text-sm">
+                  <p
+                    className={
+                      i18n.language === 'en'
+                        ? 'en-font font-semi text-sm'
+                        : 'bd-font-subTitle font-semi text-sm'
+                    }
+                  >
                     <a href="mailto:abdulalimfoundationbd@gmail.com">
                       {t('appContactUs.subTitle6')}
                     </a>
