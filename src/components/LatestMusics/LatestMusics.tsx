@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 import { Button } from '../../shared/Button';
 import VisibilitySensor from 'react-visibility-sensor';
 import MusicPlayerIcon from '../../icons/MusicPlayerIcon';
-import NcImage from '../../shared/NcImage/NcImage';
+//import NcImage from '../../shared/NcImage/NcImage';
 import Animation from '../../shared/Animation/Animation';
 import ImageAnimation from '../../shared/Animation/ImageAnimation';
-import MusicIcon from '../../icons/81966-girl-listening-to-music.json';
+import MusicIcon from '../../icons/lf20_j25ua0y6.json';
 
 const LatestMusics: React.FC = () => {
-  const { t } = useTranslation(['music']);
+  const { t, i18n } = useTranslation(['music']);
   const [elementIsVisible, setElementIsVisible] = useState(false);
   return (
     <div className="py-16 mt-10">
@@ -27,13 +27,33 @@ const LatestMusics: React.FC = () => {
 
         <h1 className="">
           <Animation animateIn="fadeInUp">
-            <span className="mb-4 space-y-4 inline-block font-bold main-text md:text-7xl">
-              <div>{t('appMusicTitle.title')}</div>
+            <span className="mb-4 space-y-4 inline-block font-bold main-text md:text-7xl text-4xl">
+              <div
+                className={
+                  i18n.language === 'en' ? 'en-font ' : 'bd-font-title'
+                }
+              >
+                {t('appMusicTitle.title')}
+              </div>
             </span>
-            <p className="font-thin text-2xl ">
+            <p
+              className={
+                i18n.language === 'en'
+                  ? 'en-font font-thin text-2xl'
+                  : 'bd-font-subTitle font-thin text-2xl mt-3'
+              }
+            >
               {t('appMusicTitle.subTitle1')}
             </p>
-            <p className="font-thin text-md ">{t('appMusicTitle.subTitle2')}</p>
+            <p
+              className={
+                i18n.language === 'en'
+                  ? 'en-font font-thin text-md'
+                  : 'bd-font-subTitle font-thin text-md'
+              }
+            >
+              {t('appMusicTitle.subTitle2')}
+            </p>
           </Animation>
           <Animation animateIn="fadeIn">
             <VisibilitySensor
@@ -46,7 +66,15 @@ const LatestMusics: React.FC = () => {
             </VisibilitySensor>
           </Animation>
           <Link to="/allMusics">
-            <Button className="mt-7" variant="outline" size="md">
+            <Button
+              variant="outline"
+              size="md"
+              className={
+                i18n.language === 'en'
+                  ? 'en-font mt-7'
+                  : 'bd-font-subTitle mt-7'
+              }
+            >
               {t('appMusicTitle.musicButton1')}
             </Button>
           </Link>

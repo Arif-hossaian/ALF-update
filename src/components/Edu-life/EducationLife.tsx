@@ -7,7 +7,7 @@ import NcImage from '../../shared/NcImage/NcImage';
 import Animation from '../../shared/Animation/Animation';
 
 const EducationLife: React.FC = () => {
-  const { t } = useTranslation(['education']);
+  const { t, i18n } = useTranslation(['education']);
   return (
     <div className="px-5 mt-16">
       <div className="grid  lg:grid-cols-2 lg:space-x-16 sm:grid-cols-1">
@@ -20,16 +20,40 @@ const EducationLife: React.FC = () => {
         </Animation>
         <Animation animateIn="fadeInUp" delay={0.2 * 1000}>
           <span className="mb-4 mt-14 space-y-4 inline-block font-bold main-text text-4xl">
-            <div>{t('appEducationLife.title')}</div>
+            <div
+              className={i18n.language === 'en' ? 'en-font ' : 'bd-font-title'}
+            >
+              {t('appEducationLife.title')}
+            </div>
           </span>
-          <p className="font-normal text-lg ">
+          <p
+            className={
+              i18n.language === 'en'
+                ? 'en-font font-normal text-lg '
+                : 'bd-font-subTitle font-normal text-lg '
+            }
+          >
             {t('appEducationLife.subTitle1')}
           </p>
-          <p className="font-light text-md ">
+          <p
+            className={
+              i18n.language === 'en'
+                ? 'en-font font-light text-md'
+                : 'bd-font-subTitle font-light text-md'
+            }
+          >
             {t('appEducationLife.subTitle2')}
           </p>
           <Link to="/more-about">
-            <Button className="mt-6" variant="outline" size="md">
+            <Button
+              variant="outline"
+              size="md"
+              className={
+                i18n.language === 'en'
+                  ? 'en-font mt-6'
+                  : 'bd-font-subTitle mt-6'
+              }
+            >
               {t('appEducationLife.subButton1')}
             </Button>
           </Link>

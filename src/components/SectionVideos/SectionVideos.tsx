@@ -58,7 +58,7 @@ const SectionVideos: FC<SectionVideosProps> = ({
 }) => {
   const [isPlay, setIsPlay] = useState(false);
   const [currentVideo, setCurrentVideo] = useState(0);
-  const { t } = useTranslation(['video']);
+  const { t, i18n } = useTranslation(['video']);
 
   const renderMainVideo = () => {
     const video: VideoType = videos[currentVideo];
@@ -133,7 +133,15 @@ const SectionVideos: FC<SectionVideosProps> = ({
           </Heading>
           <div>
             <Link to="/videos">
-              <Button className="ml-5 mt-7" variant="outline" size="md">
+              <Button
+                variant="outline"
+                size="md"
+                className={
+                  i18n.language === 'en'
+                    ? 'en-font ml-5 mt-7'
+                    : 'bd-font-subTitle ml-5 mt-7'
+                }
+              >
                 {t('appVideoTitle.videoButton1')}
               </Button>
             </Link>

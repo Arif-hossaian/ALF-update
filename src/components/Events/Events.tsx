@@ -9,7 +9,7 @@ import Card from '../../shared/Card/Card';
 import MusicLogo from '../../icons/lottieflow-multimedia-8-8-f95820-easey.json';
 
 const Events: React.FC = () => {
-  const { t } = useTranslation(['event']);
+  const { t, i18n } = useTranslation(['event']);
   return (
     <div className="mt-16 mx-auto max-w-screen-lg relative">
       <div className="space-y-4">
@@ -19,12 +19,24 @@ const Events: React.FC = () => {
           </div>
         </div>
         <Animation animateIn="fadeInUp">
-          <div className="text-5xl font-bold text-center main-text">
+          <div
+            className={
+              i18n.language === 'en'
+                ? 'en-font text-5xl font-bold text-center main-text'
+                : 'bd-font-title text-5xl font-bold text-center main-text'
+            }
+          >
             {t('appEventTitle.title')}
           </div>
         </Animation>
 
-        <p className="text-gray-400 text-center">
+        <p
+          className={
+            i18n.language === 'en'
+              ? 'en-font text-gray-400 text-center'
+              : 'bd-font-subTitle text-gray-400 text-center'
+          }
+        >
           {t('appEventTitle.subTitle')}
         </p>
         <Card className="flex h-full flex-col justify-between mt-4">
@@ -44,7 +56,7 @@ const Events: React.FC = () => {
               </span>
             </div>
 
-            <div className="ml-auto flex items-start justify-center gap-1.5 sm:justify-start">
+            <div className="ml-auto flex items-start md:justify-center gap-1.5 sm:justify-start">
               <LocationIcon />
 
               <address className="-mt-0.5 not-italic text-gray-700">
@@ -75,7 +87,7 @@ const Events: React.FC = () => {
                 lorem lorem lorem lorem
               </span>
             </div>
-            <div className="ml-auto flex items-start justify-center gap-1.5 sm:justify-start">
+            <div className="ml-auto flex items-start md:justify-center gap-1.5 sm:justify-start">
               <LocationIcon />
 
               <address className="-mt-0.5 not-italic text-gray-700">
