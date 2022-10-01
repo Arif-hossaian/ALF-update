@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
             <nav className="hidden font-semibold leading-6 text-white md:block">
               <ul className="flex space-x-10 text-lg">
                 <li className="relative">
-                  <Link to="/allMusics">
+                  <Link to="/musics">
                     <div
                       className={
                         i18n.language === 'en'
@@ -230,7 +230,7 @@ const MenuPopOver = React.memo(({ display }: { display: string }) => {
 
             <ul className="mt-16 space-y-6">
               <li className="relative">
-                <Link to="/allMusics">
+                <Link to="/musics">
                   <div
                     className={
                       i18n.language === 'en'

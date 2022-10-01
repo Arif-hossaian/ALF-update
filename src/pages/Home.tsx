@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import AboutSection from './About-alf/AboutSection';
+//import AboutSection from './About-alf/AboutSection';
 import Banner from '../components/Banner/Banner';
 import EducationLife from '../components/Edu-life/EducationLife';
 import EndOfLife from '../components/End-life/EndOfLife';
