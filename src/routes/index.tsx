@@ -7,7 +7,7 @@ import ScrollToTop from './ScrollToTop';
 import Footer from '../shared/Footer/Footer';
 import AboutSection from '../pages/About-alf/AboutSection';
 import ContactUs from '../pages/Contact-us/ContactUs';
-//import DisplayAllMusics from '../components/DisplayAllMusics/DisplayAllMusics';
+import DisplayAllMusics from '../components/DisplayAllMusics/DisplayAllMusics';
 
 const AppRoutes: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const AppRoutes: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutSection />} />
           <Route path="/contact_us" element={<ContactUs />} />
-          {/* <Route path="/allMusics" element={<DisplayAllMusics />} /> */}
+          <Route path="/musics" element={<DisplayAllMusics />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
