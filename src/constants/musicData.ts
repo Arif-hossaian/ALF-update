@@ -296,87 +296,200 @@ export const musicData = [
       'https://res.cloudinary.com/dkx1rhngy/video/upload/v1664634436/alf-music/TUMAR_NAMER_VHAROSHA_KORE_g0ss6d.mp3',
   },
   {
-    id: 35,
-    title: 'OI NITUR KALAR SANGA RE',
-    music:
-      'https://res.cloudinary.com/dfpvyvlvd/video/upload/v1664639392/alf-music/OI_NITUR_KALAR_SANGA_RE_p5uq4d.mp3',
+    id: 50,
+    title: 'lol man',
+    music: 'https://sndup.net/gm34/d',
   },
-  // {
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },{
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },
-  // {
-  //   id: 35,
-  //   title: 'OI NITUR KALAR SANGA RE',
-  //   music: 'https://res.cloudinary.com/arifscloud/video/upload/v1664629352/music/ubfrabcpskpfkrbcgkwp.mp3',
-  // },
+  {
+    id: 51,
+    music: 'https://sndup.net/nccy/d',
+  },
+  {
+    id: 52,
+    music: 'https://sndup.net/bkxn/d',
+  },
+  {
+    id: 53,
+    music: 'https://sndup.net/vhnt/d',
+  },
+  {
+    id: 54,
+    music: 'https://sndup.net/gk63/d',
+  },
+  {
+    id: 55,
+    music: 'https://sndup.net/xp3r/d',
+  },
+  {
+    id: 56,
+    music: 'https://sndup.net/f556/d',
+  },
+  {
+    id: 57,
+    music: 'https://sndup.net/r2ft/d',
+  },
+  {
+    id: 58,
+    music: 'https://sndup.net/z99x/d',
+  },
+  {
+    id: 59,
+    music: 'https://sndup.net/d4ry/d',
+  },
+  {
+    id: 60,
+    music: 'https://sndup.net/jcts/d',
+  },
+  {
+    id: 61,
+    music: 'https://sndup.net/t5j8/d',
+  },
+  {
+    id: 62,
+    music: 'https://sndup.net/k743/d',
+  },
+  {
+    id: 63,
+    music: 'https://sndup.net/2ppj/d',
+  },
+  {
+    id: 64,
+    music: 'https://sndup.net/x67p/d',
+  },
+  {
+    id: 65,
+    music: 'https://sndup.net/7pd9/d',
+  },
+  {
+    id: 66,
+    music: 'https://sndup.net/xt38/d',
+  },
+  {
+    id: 67,
+    music: 'https://sndup.net/jjbp/d',
+  },
+  {
+    id: 68,
+    music: 'https://sndup.net/tm6n/d',
+  },
+  {
+    id: 69,
+    music: 'https://sndup.net/gjmj/d',
+  },
+  {
+    id: 70,
+    music: 'https://sndup.net/2gk4/d',
+  },
+  {
+    id: 71,
+    music: 'https://sndup.net/s7w2/d',
+  },
+  {
+    id: 72,
+    music: 'https://sndup.net/n738/d',
+  },
+  {
+    id: 73,
+    music: 'https://sndup.net/m2ch/d',
+  },
+  {
+    id: 74,
+    music: 'https://sndup.net/xrbm/d',
+  },
+  {
+    id: 75,
+    music: 'https://sndup.net/x7t5/d',
+  },
+  {
+    id: 76,
+    music: 'https://sndup.net/f9rg/d',
+  },
+  {
+    id: 77,
+    music: 'https://sndup.net/xdjs/d',
+  },
+  {
+    id: 78,
+    music: 'https://sndup.net/jd3z/d',
+  },
+  {
+    id: 79,
+    music: 'https://sndup.net/bxd5/d',
+  },
+  {
+    id: 80,
+    music: 'https://sndup.net/v6yh/d',
+  },
+  {
+    id: 81,
+    music: 'https://sndup.net/w2wf/d',
+  },
+  {
+    id: 82,
+    music: 'https://sndup.net/x8hm/d',
+  },
+  {
+    id: 83,
+    music: 'https://sndup.net/tr8z/d',
+  },
+  {
+    id: 84,
+    music: 'https://sndup.net/sxj3/d',
+  },
+  {
+    id: 85,
+    music: 'https://sndup.net/rnnv/d',
+  },
+  {
+    id: 86,
+    music: 'https://sndup.net/km2t/d',
+  },
+  {
+    id: 87,
+    music: 'https://sndup.net/q2vh/d',
+  },
+  {
+    id: 88,
+    music: 'https://sndup.net/vfgx/d',
+  },
+  {
+    id: 89,
+    music: 'https://sndup.net/s62g/d',
+  },
+  {
+    id: 90,
+    music: 'https://sndup.net/r5wp/d',
+  },
+  {
+    id: 91,
+    music: 'https://sndup.net/qxkx/d',
+  },
+  {
+    id: 92,
+    music: 'https://sndup.net/tn82/d',
+  },
+  {
+    id: 93,
+    music: 'https://sndup.net/w7hy/d',
+  },
+  {
+    id: 94,
+    music: 'https://sndup.net/rxds/d',
+  },
+  {
+    id: 95,
+    music: 'https://sndup.net/zdrt/d',
+  },
+  {
+    id: 96,
+    music: 'https://sndup.net/tx3n/d',
+  },
+  {
+    id: 97,
+    music: 'https://sndup.net/jt9c/d',
+  },
+  {
+    id: 98,
+    music: 'https://sndup.net/tzd8/d',
+  },
 ];
