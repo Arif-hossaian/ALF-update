@@ -139,10 +139,11 @@ const Navbar: React.FC = () => {
 
             <div className="flex items-center space-x-4 pl-6 md:space-x-6">
               <select
+                id="select"
                 className={
                   i18n.language === 'en'
-                    ? 'en-font mt-1 block w-14 py-1 px-2 border text-white border-gray-300 bg-[#f95820] rounded-md shadow-sm focus:outline-none sm:text-sm'
-                    : 'bd-font-subTitle mt-1 block w-14 py-1 px-2 border text-white border-gray-300 bg-[#f95820] rounded-md shadow-sm focus:outline-none sm:text-sm'
+                    ? 'en-font mt-1 block w-14 py-1 px-2 border text-orange-500 border-gray-300 bg-white  rounded-md shadow-sm focus:outline-none sm:text-sm'
+                    : 'bd-font-subTitle mt-1 block w-14 py-1 px-2 border border-gray-300 bg-white text-orange-500  rounded-md shadow-sm focus:outline-none sm:text-sm'
                 }
                 name="language"
                 onChange={handleLanguageChange}
