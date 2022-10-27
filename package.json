@@ -26,6 +26,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-audio-player": "^0.17.0",
     "react-dom": "^18.2.0",
+    "react-h5-audio-player": "^3.8.6",
     "react-helmet": "^6.1.0",
     "react-i18next": "^11.17.4",
     "react-query": "^3.39.1",

@@ -60,11 +60,11 @@ const Navbar: React.FC = () => {
               <span className="flex items-center space-x-2">
                 {/* <CompactLogo className="h-[28px] w-[28px]" />
                 <TextLogo className="h-[22px] w-auto fill-gray-900 dark:fill-gray-50" /> */}
-                {/* <img
-                  src="https://res.cloudinary.com/arifscloud/image/upload/v1658298168/alf-images/b36edaz32rmqcojkbygg.jpg"
-                  alt=""
-                  className="h-[28px] w-[28px]"
-                /> */}
+                <img
+                  src="https://i.ibb.co/tKPs42d/ALF-logo-updated.png"
+                  alt="ALF-logo"
+                  className="h-[32px] w-[28px]"
+                />
 
                 <span
                   className={

@@ -18,13 +18,16 @@ const Accordion: React.FC<AccordionProps> = ({ title, content1, content2 }) => {
     setHeight(!isOpened ? `${contentElement.current.scrollHeight}px` : '0px');
   };
   return (
-    <div onClick={HandleOpening} className="border border-gray-300 rounded-lg">
-      <div className={' p-4 flex justify-between text-black'}>
+    <div
+      onClick={HandleOpening}
+      className="border border-orange-400 rounded-lg hover:bg-orange-600 hover:text-white"
+    >
+      <div className={' p-4 flex justify-between'}>
         <h4
           className={
             i18n.language === 'en'
-              ? 'en-font font-semibold'
-              : 'bd-font-title font-semibold'
+              ? 'en-font font-semibold text-orange-500 hover:text-white cursor-pointer'
+              : 'bd-font-title font-semibold text-orange-500 hover:text-white cursor-pointer'
           }
         >
           {title}
@@ -34,18 +37,22 @@ const Accordion: React.FC<AccordionProps> = ({ title, content1, content2 }) => {
       <div
         ref={contentElement}
         style={{ height: height }}
-        className="bg-gray-100 overflow-hidden transition-all duration-200"
+        className="bg-[#F95820] overflow-hidden transition-all duration-200 opacity-70"
       >
         <p
           className={
-            i18n.language === 'en' ? 'en-font p-4' : 'bd-font-subTitle p-4'
+            i18n.language === 'en'
+              ? 'en-font p-4 text-white'
+              : 'bd-font-subTitle p-4 text-white'
           }
         >
           {content1}
         </p>
         <p
           className={
-            i18n.language === 'en' ? 'en-font p-4' : 'bd-font-subTitle p-4'
+            i18n.language === 'en'
+              ? 'en-font p-4 text-white'
+              : 'bd-font-subTitle p-4 text-white'
           }
         >
           {content2}

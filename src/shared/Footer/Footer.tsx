@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             <div>
               <div className="flex justify-center sm:justify-start">
                 <img
-                  src="https://res.cloudinary.com/arifscloud/image/upload/v1658298168/alf-images/b36edaz32rmqcojkbygg.jpg"
+                  src="https://i.ibb.co/tKPs42d/ALF-logo-updated.png"
                   alt=""
                   className="h-[96px] w-[96px]"
                 />
@@ -41,16 +41,12 @@ const Footer: React.FC = () => {
                   >
                     <span className="sr-only">Facebook</span>
                     <svg
-                      className="w-6 h-6"
-                      fill="currentColor"
+                      className="w-7 h-7 fill-current"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
-                      aria-hidden="true"
                     >
-                      <path
-                        fillRule="evenodd"
-                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                        clipRule="evenodd"
-                      />
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                     </svg>
                   </a>
                 </li>
@@ -64,7 +60,7 @@ const Footer: React.FC = () => {
                   >
                     <span className="sr-only">Instagram</span>
                     <svg
-                      className="w-6 h-6"
+                      className="w-7 h-7"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -87,7 +83,7 @@ const Footer: React.FC = () => {
                   >
                     <span className="sr-only">Twitter</span>
                     <svg
-                      className="w-6 h-6"
+                      className="w-7 h-7"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -111,7 +107,7 @@ const Footer: React.FC = () => {
                     {t('appFooterTitle.HelpfulLinks')}
                   </p>
 
-                  <nav className="mt-8">
+                  <nav className="mt-5">
                     <ul className="space-y-4 text-lg">
                       <li>
                         <a
@@ -172,7 +168,7 @@ const Footer: React.FC = () => {
                     {t('appFooterTitle.Contact_us')}
                   </p>
 
-                  <ul className="mt-8 space-y-4 text-lg">
+                  <ul className="mt-5 space-y-4 text-lg">
                     <li>
                       <a
                         className="flex items-center justify-center gap-1.5 sm:justify-start"
@@ -180,7 +176,7 @@ const Footer: React.FC = () => {
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-5 h-5 main-text shrink-0"
+                          className="w-7 h-7 main-text shrink-0"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -196,10 +192,13 @@ const Footer: React.FC = () => {
                         <span
                           className={
                             i18n.language === 'en'
-                              ? 'en-font text-gray-700'
+                              ? 'en-font text-gray-700 ml-1'
                               : 'bd-font-subTitle text-gray-700'
                           }
                         >
+                          <p className="font-semibold text-lg">
+                            {t('appFooterTitle.email_text')}
+                          </p>
                           {t('appFooterTitle.email')}
                         </span>
                       </a>
@@ -212,7 +211,7 @@ const Footer: React.FC = () => {
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-5 h-5 main-text shrink-0"
+                          className="w-7 h-7 main-text shrink-0"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -228,19 +227,22 @@ const Footer: React.FC = () => {
                         <span
                           className={
                             i18n.language === 'en'
-                              ? 'en-font text-gray-700'
-                              : 'bd-font-subTitle text-gray-700'
+                              ? 'en-font text-gray-700 ml-1'
+                              : 'bd-font-subTitle text-gray-700 ml-1'
                           }
                         >
+                          <p className="font-semibold text-lg">
+                            {t('appFooterTitle.phone_text')}
+                          </p>
                           {t('appFooterTitle.phone')}
                         </span>
                       </a>
                     </li>
 
-                    <li className="flex items-start justify-center gap-1.5 sm:justify-start">
+                    <li className="flex items-center justify-center gap-1.5 sm:justify-start">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 main-text shrink-0"
+                        className="w-7 h-7 main-text shrink-0"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -261,10 +263,13 @@ const Footer: React.FC = () => {
                       <address
                         className={
                           i18n.language === 'en'
-                            ? 'en-font -mt-0.5 not-italic text-gray-700'
-                            : 'bd-font-subTitle -mt-0.5 not-italic text-gray-700'
+                            ? 'en-font -mt-0.5 ml-1 not-italic text-gray-700'
+                            : 'bd-font-subTitle -mt-0.5 ml-1 not-italic text-gray-700'
                         }
                       >
+                        <p className="font-semibold text-lg">
+                          {t('appFooterTitle.location_text')}
+                        </p>
                         {t('appFooterTitle.location')}
                       </address>
                     </li>

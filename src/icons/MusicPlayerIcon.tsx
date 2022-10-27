@@ -29,13 +29,13 @@ function MusicPlayerIcon() {
       <div className="lowerPart flex items-center justify-between mt-5">
         {/* track */}
         <div className="track flex justify-between text-sm text-gray-400 flex-[2] items-center">
-          <span>2: 30</span>
+          <span>2:30</span>
           <img
             src="https://res.cloudinary.com/arifscloud/image/upload/v1657555293/alf-images/Group_9_ve6txo.png"
             alt=""
             className="w-[16rem]"
           />
-          <span>4: 30</span>
+          <span>4:30</span>
         </div>
         {/* Controls */}
         <div className="controls flex-1 flex items-center justify-around">

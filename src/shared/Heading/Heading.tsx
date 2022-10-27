@@ -30,8 +30,8 @@ const Heading: React.FC<HeadingProps> = ({
         <h2
           className={
             i18n.language === 'en'
-              ? 'en-font text-3xl md:text-4xl font-semibold'
-              : 'bd-font-title text-3xl md:text-4xl font-semibold'
+              ? 'en-font text-3xl md:text-5xl lg:text-5xl font-semibold'
+              : 'bd-font-title text-3xl md:text-5xl lg:text-5xl font-semibold'
           }
           {...args}
         >
