@@ -11,7 +11,10 @@
     "HelpfulLinksSubTitle3": "Contact Us",
     "Contact_us": "Contact Us",
     "email": "abdulalimfoundationbd@gmail.com",
+    "email_text": "Email us",
     "phone": "+880 1712121212",
-    "location": "494/C Khilgaon, Dhaka-1219"
+    "phone_text": "Phone",
+    "location": "494/C Khilgaon, Dhaka-1219",
+    "location_text": "Address"
   }
 }

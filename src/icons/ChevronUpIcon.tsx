@@ -2,7 +2,7 @@ import React from 'react';
 
 const ChevronUpIcon: React.FC = () => {
   return (
-    <div>
+    <div className="text-orange-500 hover:text-white">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6"

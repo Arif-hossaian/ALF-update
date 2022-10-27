@@ -49,7 +49,7 @@ const Events: React.FC = () => {
             </div>
             <div className="ml-auto mb-auto">
               <h3 className="md:text-2xl sm:text-lg text-[#000000]">
-                RockParty with DJ
+                Event title 1
               </h3>
               <span className="text-sm font-light text-gray-500">
                 lorem lorem lorem lorem
@@ -81,7 +81,7 @@ const Events: React.FC = () => {
             </div>
             <div className="ml-auto mb-auto">
               <h3 className="md:text-2xl sm:text-lg text-[#000000]">
-                RockParty with DJ
+                Event title 2
               </h3>
               <span className="text-sm font-light text-gray-500">
                 lorem lorem lorem lorem

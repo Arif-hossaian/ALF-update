@@ -11,7 +11,10 @@
     "HelpfulLinksSubTitle3": "যোগাযোগ করুন",
     "Contact_us": "যোগাযোগ করুন",
     "email": "abdulalimfoundationbd@gmail.com",
+    "email_text": "আমাদেরকে ইমেইল করুন",
     "phone": "+880 1712121212",
-    "location": "494/সি খিলগাঁও, ঢাকা-1219"
+    "phone_text": "ফোন",
+    "location": "494/সি খিলগাঁও, ঢাকা-1219",
+    "location_text": "ঠিকানা"
   }
 }
