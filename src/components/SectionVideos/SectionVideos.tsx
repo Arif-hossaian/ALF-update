@@ -23,7 +23,7 @@ const VIDEOS_DEMO: VideoType[] = [
   {
     id: 'NcRifDitRnU',
     title: 'Magical Scotland - 4K Scenic Relaxation Film with Calming Music',
-    thumbnail: 'https://i.ibb.co/C05d83v/maxresdefault.jpg',
+    thumbnail: '',
   },
   // {
   //   id: 'a5V6gdu5ih8',
@@ -66,7 +66,7 @@ const SectionVideos: FC<SectionVideosProps> = ({
         className="group aspect-w-16 aspect-h-16 sm:aspect-h-9 bg-natural-800 rounded-3xl overflow-hidden border-4 border-white sm:rounded-[50px] sm:border-[10px]"
         title={video.title}
       >
-        {isPlay ? (
+        {/* {isPlay ? (
           <iframe
             src={`https://www.youtube.com/embed/_I3Q5AYr6R0`}
             title={video.title}
@@ -89,7 +89,13 @@ const SectionVideos: FC<SectionVideosProps> = ({
               alt={video.title}
             />
           </>
-        )}
+        )} */}
+        <iframe
+          src={`https://www.youtube.com/embed/_I3Q5AYr6R0`}
+          title={video.title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
     );
   };
