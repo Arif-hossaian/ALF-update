@@ -13,7 +13,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content1, content2 }) => {
   const [height, setHeight] = useState<string>('0px');
   const contentElement = useRef<string | number | any>(null);
 
-  const HandleOpening = () => {
+  const HandleOpening = (key: any) => {
     setOpened(!isOpened);
     setHeight(!isOpened ? `${contentElement.current.scrollHeight}px` : '0px');
   };
@@ -37,13 +37,13 @@ const Accordion: React.FC<AccordionProps> = ({ title, content1, content2 }) => {
       <div
         ref={contentElement}
         style={{ height: height }}
-        className="bg-[#F95820] overflow-hidden transition-all duration-200 opacity-70"
+        className="bg-[#F95820] overflow-hidden transition-all duration-200 opacity-90"
       >
         <p
           className={
             i18n.language === 'en'
-              ? 'en-font p-4 text-white'
-              : 'bd-font-subTitle p-4 text-white'
+              ? 'en-font p-4 text-gray-100'
+              : 'bd-font-subTitle p-4 text-gray-100'
           }
         >
           {content1}

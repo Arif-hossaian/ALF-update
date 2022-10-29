@@ -9,6 +9,7 @@ import MusicPlayerIcon from '../../icons/MusicPlayerIcon';
 import Animation from '../../shared/Animation/Animation';
 import ImageAnimation from '../../shared/Animation/ImageAnimation';
 import MusicIcon from '../../icons/lf20_j25ua0y6.json';
+import AudioPlayer from 'react-h5-audio-player';
 
 const LatestMusics: React.FC = () => {
   const { t, i18n } = useTranslation(['music']);
@@ -55,7 +56,7 @@ const LatestMusics: React.FC = () => {
               {t('appMusicTitle.subTitle2')}
             </p>
           </Animation>
-          <Animation animateIn="fadeIn">
+          {/* <Animation animateIn="fadeIn">
             <VisibilitySensor
               onChange={(
                 isVisible: boolean | ((prevState: boolean) => boolean)
@@ -64,7 +65,17 @@ const LatestMusics: React.FC = () => {
             >
               <MusicPlayerIcon />
             </VisibilitySensor>
-          </Animation>
+          </Animation> */}
+          <div className="mt-3">
+            <Animation animateIn="fadeIn">
+              <AudioPlayer
+                src="https://abdulalimfoundation.org.bd/songs/ALLAHU%20ALLAHU%20TUMI.mp3"
+                onPlay={(e) => console.log('onPlay')}
+                // other props here
+              />
+            </Animation>
+          </div>
+
           <Link to="/allMusics">
             <Button
               variant="outline"
