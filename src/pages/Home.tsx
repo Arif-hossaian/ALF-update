@@ -18,7 +18,7 @@ const Home = () => {
         <EducationLife />
         <WorkingLife />
         <EndOfLife />
-        <Events />
+        {/* <Events /> */}
         <LatestMusics />
         <SectionVideos />
         {/* <AboutSection /> */}

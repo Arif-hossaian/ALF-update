@@ -5,7 +5,8 @@ import { Pagination, Autoplay, Navigation } from 'swiper';
 const images = [
   {
     id: 1,
-    src: 'https://res.cloudinary.com/arifscloud/image/upload/v1658292778/alf-images/j42irsuitijut4cm7c3g.jpg',
+    // src: 'https://res.cloudinary.com/arifscloud/image/upload/v1658292778/alf-images/j42irsuitijut4cm7c3g.jpg',
+    src: 'https://i.ibb.co/1XrQngG/IMG-20230117-WA0001.jpg',
   },
   {
     id: 2,

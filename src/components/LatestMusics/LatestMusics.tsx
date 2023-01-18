@@ -22,7 +22,7 @@ const LatestMusics: React.FC = () => {
           alt="Abdul_alim_Cover"
           className="object-cover object-center mt-10 w-3/4 h-3/4 image-bounce animate-pulse transform transition-all hover:scale-105"
         /> */}
-        <div className="-mt-16">
+        <div className="-mt-32">
           <ImageAnimation animationData={MusicIcon} />{' '}
         </div>
 
@@ -76,7 +76,7 @@ const LatestMusics: React.FC = () => {
             </Animation>
           </div>
 
-          <Link to="/allMusics">
+          <Link to="/musics">
             <Button
               variant="outline"
               size="md"

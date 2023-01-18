@@ -172,7 +172,7 @@ const MenuPopOver = React.memo(({ display }: { display: string }) => {
     <div className={display}>
       <button aria-label="Navigation Menu" onClick={() => setIsOpen(!isOpen)}>
         <svg
-          className="h-6 w-6 hover:stroke-red-600 dark:hover:stroke-red-400"
+          className="h-6 w-6 hover:stroke-red-600 "
           fill="none"
           stroke="currentColor"
         >
@@ -209,10 +209,10 @@ const MenuPopOver = React.memo(({ display }: { display: string }) => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-gray-900/80" />
+            <Dialog.Overlay className="fixed inset-0 bg-black/20 backdrop-blur-sm" />
           </Transition.Child>
 
-          <div className="fixed top-0 bottom-0 left-0 w-full max-w-xs rounded-r-2xl bg-white p-6 shadow-lg dark:bg-gray-800 ">
+          <div className="fixed top-0 bottom-0 left-0 w-full max-w-xs rounded-r-2xl bg-white p-6 shadow-lg">
             <a className="mx-auto mt-4">
               <span className="flex items-center space-x-2">
                 {/* <CompactLogo className="h-[32px] w-[32px]" />
