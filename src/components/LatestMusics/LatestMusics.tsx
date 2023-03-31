@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '../../shared/Button';
 import VisibilitySensor from 'react-visibility-sensor';
 import MusicPlayerIcon from '../../icons/MusicPlayerIcon';
@@ -12,8 +12,13 @@ import MusicIcon from '../../icons/lf20_j25ua0y6.json';
 import AudioPlayer from 'react-h5-audio-player';
 
 const LatestMusics: React.FC = () => {
+  let navigate = useNavigate();
   const { t, i18n } = useTranslation(['music']);
   const [elementIsVisible, setElementIsVisible] = useState(false);
+  function handleClick() {
+    navigate('/notation');
+  }
+
   return (
     <div className="py-16 mt-10">
       <div className="grid md:grid-cols-2 lg:grid-cols-2 xs:grid-cols-1">
@@ -75,20 +80,45 @@ const LatestMusics: React.FC = () => {
               />
             </Animation>
           </div>
-
-          <Link to="/musics">
-            <Button
-              variant="outline"
-              size="md"
-              className={
-                i18n.language === 'en'
-                  ? 'en-font mt-7'
-                  : 'bd-font-subTitle mt-7'
-              }
-            >
-              {t('appMusicTitle.musicButton1')}
-            </Button>
-          </Link>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'center',
+            }}
+          >
+            <Link to="/musics">
+              <Button
+                variant="outline"
+                size="md"
+                className={
+                  i18n.language === 'en'
+                    ? 'en-font mt-7'
+                    : 'bd-font-subTitle mt-7'
+                }
+              >
+                {t('appMusicTitle.musicButton1')}
+              </Button>
+            </Link>
+            <div style={{ marginLeft: '20px' }}>
+              <a
+                href="https://abdulalimfoundation.org.bd/notation.html"
+                target="__blank"
+              >
+                <Button
+                  variant="ghost"
+                  size="md"
+                  className={
+                    i18n.language === 'en'
+                      ? 'en-font mt-7'
+                      : 'bd-font-subTitle mt-7'
+                  }
+                >
+                  {t('appMusicTitle.pdfButton')}
+                </Button>
+              </a>
+            </div>
+          </div>
         </h1>
       </div>
     </div>

@@ -12,6 +12,8 @@ const Player: FC = () => {
 
   const handlePlay = (song: any) => {
     //console.log(song);
+    console.log(currentSong);
+    console.log(refs[currentSong.id]);
     if (currentSong.id && currentSong.id !== song.id) {
       refs[currentSong.id].current.audio.current.pause();
     }

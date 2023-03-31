@@ -73,10 +73,15 @@ export const Button = React.memo(
         'border-[#f95820]',
       ];
       let btnGhost = [
-        'bg-[#FEF027]',
-        'text-gray-700',
-        'hover:bg-[#14A800]',
+        'text-black',
+        'fill-gray-600',
+        'dark:text-white',
         'hover:text-white',
+        'hover:fill-red-600',
+        'bg-transparent',
+        'hover:bg-[#f95820]',
+        'border',
+        'border-[#f95820]',
       ];
 
       if (variant === 'solid') {

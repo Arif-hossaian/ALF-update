@@ -1,30 +1,20 @@
 Arguments: 
-  /usr/bin/node /usr/bin/yarn add @types/react-toggle-button
+  /usr/bin/node /home/arif/.yarn/bin/yarn.js add @react-pdf-viewer/core@3.12.0
 
 PATH: 
-  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/arif/.dotnet/tools:/home/arif/.dotnet/tools
+  /home/arif/.yarn/bin:/home/arif/.config/yarn/global/node_modules/.bin:/home/arif/.yarn/bin:/home/arif/.config/yarn/global/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/arif/.dotnet/tools
 
 Yarn version: 
-  1.22.18
+  1.22.19
 
 Node version: 
-  16.16.0
+  16.19.1
 
 Platform: 
   linux x64
 
 Trace: 
-  Error: https://registry.npmjs.org/@types%2freact-toggle-button: Not found
-      at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:66138:18)
-      at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:140883:22)
-      at Request.emit (node:events:527:28)
-      at Request.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141855:10)
-      at Request.emit (node:events:527:28)
-      at IncomingMessage.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141777:12)
-      at Object.onceWrapper (node:events:641:28)
-      at IncomingMessage.emit (node:events:539:35)
-      at endReadableNT (node:internal/streams/readable:1345:12)
-      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+  Error: ENOTEMPTY: directory not empty, rmdir '/media/arif/00A62FE0A62FD546/new-alf/node_modules/canvas/build/Release'
 
 npm manifest: 
   {
@@ -50,15 +40,17 @@ npm manifest:
       "i18next": "^21.8.12",
       "i18next-browser-languagedetector": "^6.1.4",
       "i18next-http-backend": "^1.4.1",
+      "lottie-react": "^2.3.1",
       "react": "^18.2.0",
       "react-animate-on-scroll": "^2.1.5",
+      "react-audio-player": "^0.17.0",
       "react-dom": "^18.2.0",
+      "react-h5-audio-player": "^3.8.6",
       "react-helmet": "^6.1.0",
       "react-i18next": "^11.17.4",
       "react-query": "^3.39.1",
       "react-router-dom": "^6.3.0",
       "react-scripts": "5.0.1",
-      "react-toggle-button": "^2.2.0",
       "react-visibility-sensor": "^5.1.1",
       "swiper": "^8.3.0",
       "typescript": "^4.4.2",
@@ -1314,6 +1306,16 @@ Lockfile:
     version "1.2.1"
     resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
     integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
+  
+  "@iconify/icons-mdi@~1.1.0":
+    version "1.1.47"
+    resolved "https://registry.yarnpkg.com/@iconify/icons-mdi/-/icons-mdi-1.1.47.tgz#4bbe1e5d126de7acde05a66addd869c66bd97ca0"
+    integrity sha512-6AZfvWru20Rl9pXULStkVvTWnua6VG56zOIKdkCzLh25XVeTDEp6f1dL7iX9w+way5+1hI0BBuqTQd61qYaKdg==
+  
+  "@iconify/react@^3.1.3":
+    version "3.2.2"
+    resolved "https://registry.yarnpkg.com/@iconify/react/-/react-3.2.2.tgz#ab5241dc01562076bae3b0c22238aff7e5f029cc"
+    integrity sha512-z3+Jno3VcJzgNHsN5mEvYMsgCkOZkydqdIwOxjXh45+i2Vs9RGH68Y52vt39izwFSfuYUXhaW+1u7m7+IhCn/g==
   
   "@istanbuljs/load-nyc-config@^1.0.0":
     version "1.1.0"
@@ -6101,6 +6103,18 @@ Lockfile:
     dependencies:
       js-tokens "^3.0.0 || ^4.0.0"
   
+  lottie-react@^2.3.1:
+    version "2.3.1"
+    resolved "https://registry.yarnpkg.com/lottie-react/-/lottie-react-2.3.1.tgz#697060417bab027edb57ed45bda9d62e920d4040"
+    integrity sha512-8cxd6XZZtECT6LoAhCftRdYrEpHxiouvB5EPiYA+TtCG5LHNYAdMS9IVIHcxKtWnpo7x16QfCLj1XLXZpaN81A==
+    dependencies:
+      lottie-web "^5.9.4"
+  
+  lottie-web@^5.9.4:
+    version "5.9.6"
+    resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.9.6.tgz#62ae68563355d3e04aa75d53dec3dd4bea0e57c9"
+    integrity sha512-JFs7KsHwflugH5qIXBpB4905yC1Sub2MZWtl/elvO/QC6qj1ApqbUZJyjzJseJUtVpgiDaXQLjBlIJGS7UUUXA==
+  
   lower-case@^2.0.2:
     version "2.0.2"
     resolved "https://registry.yarnpkg.com/lower-case/-/lower-case-2.0.2.tgz#6fa237c63dbdc4a82ca0fd882e4722dc5e634e28"
@@ -6685,11 +6699,6 @@ Lockfile:
     version "4.0.0"
     resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
     integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
-  
-  performance-now@^0.2.0:
-    version "0.2.0"
-    resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
-    integrity sha512-YHk5ez1hmMR5LOkb9iJkLKqoBlL7WD5M8ljC75ZfzXriuBIVNuecaXuU7e+hOwyqf24Wxhh7Vxgt7Hnw9288Tg==
   
   performance-now@^2.1.0:
     version "2.1.0"
@@ -7345,7 +7354,7 @@ Lockfile:
       kleur "^3.0.3"
       sisteransi "^1.0.5"
   
-  prop-types@^15.5.8, prop-types@^15.5.9, prop-types@^15.6.0, prop-types@^15.7.2, prop-types@^15.8.1:
+  prop-types@^15.5.9, prop-types@^15.7.2, prop-types@^15.8.1:
     version "15.8.1"
     resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
     integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -7394,7 +7403,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
     integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
   
-  raf@^3.1.0, raf@^3.4.1:
+  raf@^3.4.1:
     version "3.4.1"
     resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
     integrity sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==
@@ -7442,6 +7451,13 @@ Lockfile:
       raf "^3.4.1"
       regenerator-runtime "^0.13.9"
       whatwg-fetch "^3.6.2"
+  
+  react-audio-player@^0.17.0:
+    version "0.17.0"
+    resolved "https://registry.yarnpkg.com/react-audio-player/-/react-audio-player-0.17.0.tgz#4be7b1952512801f36ba0865a9c98f7b108f991e"
+    integrity sha512-aCZgusPxA9HK7rLZcTdhTbBH9l6do9vn3NorgoDZRxRxJlOy9uZWzPaKjd7QdcuP2vXpxGA/61JMnnOEY7NXeA==
+    dependencies:
+      prop-types "^15.7.2"
   
   react-dev-utils@^12.0.1:
     version "12.0.1"
@@ -7491,6 +7507,15 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
     integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
   
+  react-h5-audio-player@^3.8.6:
+    version "3.8.6"
+    resolved "https://registry.yarnpkg.com/react-h5-audio-player/-/react-h5-audio-player-3.8.6.tgz#e7ee69ba6c0a82d317d4f987d83bb18b356a4415"
+    integrity sha512-eyViI47jRRybCcCkGdoAMd6yfhg3UMyXp39mqOWCbNQfAYI8U6zC0+0DLZjhrB7//DJtHhZx8h1q99HMxYkMWQ==
+    dependencies:
+      "@babel/runtime" "^7.10.2"
+      "@iconify/icons-mdi" "~1.1.0"
+      "@iconify/react" "^3.1.3"
+  
   react-helmet@^6.1.0:
     version "6.1.0"
     resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-6.1.0.tgz#a750d5165cb13cf213e44747502652e794468726"
@@ -7524,15 +7549,6 @@ Lockfile:
     version "18.2.0"
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
     integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
-  
-  react-motion@^0.5.2:
-    version "0.5.2"
-    resolved "https://registry.yarnpkg.com/react-motion/-/react-motion-0.5.2.tgz#0dd3a69e411316567927917c6626551ba0607316"
-    integrity sha512-9q3YAvHoUiWlP3cK0v+w1N5Z23HXMj4IF4YuvjvWegWqNPfLXsOBE/V7UvQGpXxHFKRQQcNcVQE31g9SB/6qgQ==
-    dependencies:
-      performance-now "^0.2.0"
-      prop-types "^15.5.8"
-      raf "^3.1.0"
   
   react-query@^3.39.1:
     version "3.39.1"
@@ -7622,14 +7638,6 @@ Lockfile:
     version "2.1.2"
     resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"
     integrity sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==
-  
-  react-toggle-button@^2.2.0:
-    version "2.2.0"
-    resolved "https://registry.yarnpkg.com/react-toggle-button/-/react-toggle-button-2.2.0.tgz#a1b92143aa0df414642fcb141f0879f545bc5a89"
-    integrity sha512-u6D/TalAvfuaIHq59v8WAddztrM6W/FtmTFrk6bvb3JmMpEDh2gQbKD8hFbfCtwwOAygZfsmzQdUAYg3x+wywQ==
-    dependencies:
-      prop-types "^15.6.0"
-      react-motion "^0.5.2"
   
   react-visibility-sensor@^5.1.1:
     version "5.1.1"
